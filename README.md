@@ -1,108 +1,250 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# THE GAMER QUIZ
 
-Welcome USER_NAME,
+What the site is about, mockup and live link.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Table of contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+- [User Experience (UX)](#User-Experience-UX)
 
-## Gitpod Reminders
+  - [Initial Discussion](#Initial-Discussion)
+  - [User Stories](#User-Stories)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- [Design](#Design)
 
-`python3 -m http.server`
+  - [Colour Scheme](#Colour-Scheme)
+  - [Typography](#Typography)
+  - [Imagery](#Imagery)
+  - [Wireframes](#Wireframes)
+  - [Features](#Features)
+  - [Accessibility](#Accessibility)
 
-A blue button should appear to click: _Make Public_,
+- [Technologies Used](#Technologies-Used)
 
-Another blue button should appear to click: _Open Browser_.
+  - [Languages Used](#languages-used)
+  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- [Deployment & Local Development](#Deployment--Local-Development)
 
-A blue button should appear to click: _Make Public_,
+  - [Deployment](#Deployment)
+  - [Local Development](#Local-Development)
+    - [How to Fork](#How-to-Fork)
+    - [How to Clone](#How-to-Clone)
 
-Another blue button should appear to click: _Open Browser_.
+- [Testing](#Testing)
+  - [Solved Bugs](#Solved-Bugs)
+  - [Known Bugs](#known-Bugs)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- [Credits](#Credits)
+  - [Content](#Content)
+  - [Media](#Media)
+  - [Reference material](#Reference-material)
+  - [Acknowledgments](#Acknowledgments)
 
 ---
 
-Happy coding!
+## User Experience (UX)
+
+### Initial Discussion
+
+Page description
+
+#### Key information for the site
+
+- Abc
+
+
+### User Stories
+
+#### User Goals
+
+- As a user, I want to 
+
+#### First-Time Visitor Goals
+
+- As a first-time visitor, I want to 
+
+#### Returning Visitor Goals
+
+- As a returning visitor, I want to 
+
+#### Frequent Visitor Goals
+
+- As a frequent visitor, I want to 
+
+---
+
+## Design
+
+### Colour Scheme
+The site colour palette.
+
+### Typography
+
+The fonts were taken from Google Fonts:
+
+- Font 1.
+
+- Font 2.
+
+
+### Imagery
+
+The images are taken from the royalty-free sites credited [here](#Credits).
+
+### Wireframes
+
+Wireframes for desktop, tablet and mobile versions are as follows:
+
+- Home page
+
+![Home Page wireframe](docs/wf-home.png)
+
+- How to play page
+
+![How to play wireframe](docs/wf-how-to-play.png)
+
+- Select difficulty level page
+
+![Select difficulty level](docs/wf-select-difficulty-level.png)
+
+- Game in progress page
+
+![Game in progress](docs/wf-game-in-progress.png)
+
+- Quit game page
+
+![Quit game wireframe](docs/wf-quit-game.png)
+
+- Finish game page
+
+![Finish game wireframe](docs/wf-finish-game.png)
+
+- High scores page
+
+![High scores reframe](docs/wf-high-scores.png)
+
+
+
+### Features
+
+#### Existing Features
+General features.
+
+### Features Left to Implement
+
+In the future, I would like to:
+
+- Abc.
+
+### Accessibility
+
+It is important to have a website that is accessibility friendly, this objective was achieved by:
+
+- Ensuring that images have an alt attribute.
+- Using aria labels.
+- Using semantic html.
+- Making sure that background and foreground colours have high contrast, after an error returned in the nav bar by the lighthouse validator the background colour darkness was increased to contrast higher with the white color applied to the font, the logo also has a drop shadow to enhance visibility and the clickable menu for mobile screens uses a visible font size.
+- Using a sans serif font is recommended for web design which is easy to read.
+
+---
+
+## Technologies Used
+
+###  Languages Used
+
+HTML, CSS and JS were used to create this website.
+
+### Frameworks, Libraries & Programs Used
+
+[Balsamiq](https://balsamiq.com/wireframes/) - Used to create wireframes.
+
+[Git](https://git-scm.com/) - For version control.
+
+[GitHub](https://github.com/) - To save and store the files for the website.
+
+[Code from anywhere](https://app.codeanywhere.com/) - To write, edit and save code.
+
+[Google Fonts](https://fonts.google.com/) - To import fonts for the website.
+
+[Font Awesome](https://fontawesome.com/icons) - To add icons to the website.
+
+[Tiny PNG](https://tinypng.com/) - To quickly compress imagery.
+
+[Convertio](https://convertio.co/) - To convert to webp format.
+
+[Birme]( https://www.birme.net/?auto_height=true&image_format=webp) - To convert to webp format.
+
+[Photoshop](https://www.adobe.com/ie/products/photoshop.html) - To edit, resize, crop to size and web optimise imagery.
+
+[Illustrator](https://www.adobe.com/ie/products/illustrator.html) - For the fav icon creation.
+
+[Shields](https://shields.io/) - To add badges to the readme file.
+
+[Amiresponsive](https://ui.dev/amiresponsive) - To generate a mockup in different screen sizes.
+
+[Techsini](https://techsini.com/multi-mockup/) - To generate individual mockups.
+
+---
+
+## Deployment & Local Development
+
+### Deployment
+
+Github Pages were used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in (or sign up) to Github.
+2. Find the repository for this project, Zest-studi-o/P02-The-gamer-quiz.
+3. Click on the Settings link.
+4. Click on the Pages link in the left-hand side navigation bar.
+5. In the Source section, choose main from the drop-down select branch menu. Select Root from the drop-down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+### Local Development
+
+#### How to Fork
+
+To fork the P01-Allotment-gardens repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, Zest-studi-o/P02-The-gamer-quiz.
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the P01-Allotment-gardens repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, Zest-studi-o/P02-The-gamer-quiz.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+---
+
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+
+### Solved Bugs
+
+| ID  | CLASS | FEATURE          | DESCRIPTION                                                                          | STEPS TO REPRODUCE                                                                                                                                                           | ACTUAL RESULT                                                                                                                                  | EXPECTED RESULT                                                            | ACTION                                                                                                        | STATUS |
+| --- | ----- | ---------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| 1   | A     | Location          | Issue                                                   | Steps to reproduce                                                                           | Actual result                                     | Expected result                            | Solution                                                              | FIXED OR NOT FIXED  |
+
+### Known Bugs
+
+There are no remaining known bugs, all of them have been fixed.
+
+---
+
+## Credits
+
+### Content
+
+### Media
+
+### Reference material
+
+### Acknowledgments
+
+- [Derek MCAuley](https://github.com/derekmcauley7), my Code Institute Mentor.
