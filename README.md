@@ -6,7 +6,6 @@ What the site is about, mockup and live link.
 
 - [User Experience (UX)](#User-Experience-UX)
 
-  - [Initial Discussion](#Initial-Discussion)
   - [User Stories](#User-Stories)
 
 - [Design](#Design)
@@ -35,41 +34,42 @@ What the site is about, mockup and live link.
   - [Known Bugs](#known-Bugs)
 
 - [Credits](#Credits)
-  - [Content](#Content)
-  - [Media](#Media)
-  - [Reference material](#Reference-material)
+  - [Code Used](#code-used)
+  - [Content](#content)
+  - [Media](#media)
   - [Acknowledgments](#Acknowledgments)
 
 ---
 
 ## User Experience (UX)
 
-### Initial Discussion
-
-Page description
-
 #### Key information for the site
 
-- Abc
+This section provides insight into the UX process, focusing on who the Gamer Quiz website is for, the main aims of the project and 
+how the website can help users meet their needs.
 
+Project goals:
+- To encourage people to take the gamer quiz.
+- To let users select different levels of difficulty.
+- To provide users with feedback so that they know what they have got wrong and learn the correct anwser.
+- To allow the users to save their scores and appear on the leaderboard to make it more competitive and appealing to play.
 
 ### User Stories
 
-#### User Goals
-
-- As a user, I want to 
-
 #### First-Time Visitor Goals
 
-- As a first-time visitor, I want to 
+- As a first-time visitor, I want to [perform some task] so that I can [achieve some goal]
+- As a first-time visitor, I want to take part in a gaming quiz so that I can test my knowledge about video games.
+- As a first-time visitor, I want to play the quiz in different devices so that I can use all my devices at my convenience.
+- As a first-time visitor, I want to navigate easily the site so that I can understand quickly the game mechanics.
 
 #### Returning Visitor Goals
 
-- As a returning visitor, I want to 
+- As a returning visitor, I want to select the level of difficulty so that I can play in different modes and test further my knowledge. 
 
 #### Frequent Visitor Goals
-
-- As a frequent visitor, I want to 
+- As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as posible to improve. 
+- As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank in the leaderboards.
 
 ---
 
@@ -203,7 +203,7 @@ Github Pages were used to deploy the live website. The instructions to achieve t
 
 #### How to Fork
 
-To fork the P01-Allotment-gardens repository:
+To fork the Zest-studi-o/P02-The-gamer-quiz repository:
 
 1. Log in (or sign up) to Github.
 2. Go to the repository for this project, Zest-studi-o/P02-The-gamer-quiz.
@@ -211,7 +211,7 @@ To fork the P01-Allotment-gardens repository:
 
 #### How to Clone
 
-To clone the P01-Allotment-gardens repository:
+To clone the Zest-studi-o/P02-The-gamer-quiz repository:
 
 1. Log in (or sign up) to GitHub.
 2. Go to the repository for this project, Zest-studi-o/P02-The-gamer-quiz.
@@ -239,11 +239,18 @@ There are no remaining known bugs, all of them have been fixed.
 
 ## Credits
 
+### Code Used
+
+If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+
 ### Content
 
-### Media
+- [Best Video Games Trivia](https://www.trivianerd.com/collection/video-games-trivia-questions)
+- [Beano](https://www.beano.com/posts/ultimate-gamer-quiz)
 
-### Reference material
+###  Media
+
+If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
 
 ### Acknowledgments
 
