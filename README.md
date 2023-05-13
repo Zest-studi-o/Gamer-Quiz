@@ -30,8 +30,6 @@ What the site is about, mockup and live link.
     - [How to Clone](#How-to-Clone)
 
 - [Testing](#Testing)
-  - [Solved Bugs](#Solved-Bugs)
-  - [Known Bugs](#known-Bugs)
 
 - [Credits](#Credits)
   - [Code Used](#code-used)
@@ -58,7 +56,6 @@ Project goals:
 
 #### First-Time Visitor Goals
 
-- As a first-time visitor, I want to [perform some task] so that I can [achieve some goal]
 - As a first-time visitor, I want to take part in a gaming quiz so that I can test my knowledge about video games.
 - As a first-time visitor, I want to play the quiz in different devices so that I can use all my devices at my convenience.
 - As a first-time visitor, I want to navigate easily the site so that I can understand quickly the game mechanics.
@@ -224,18 +221,6 @@ To clone the Zest-studi-o/P02-The-gamer-quiz repository:
 ## Testing
 
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
-
-### Solved Bugs
-
-| ID  | CLASS | FEATURE          | DESCRIPTION                                                                          | STEPS TO REPRODUCE                                                                                                                                                           | ACTUAL RESULT                                                                                                                                  | EXPECTED RESULT                                                            | ACTION                                                                                                        | STATUS |
-| --- | ----- | ---------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
-| 1   | A     | Location          | Issue                                                   | Steps to reproduce                                                                           | Actual result                                     | Expected result                            | Solution                                                              | FIXED OR NOT FIXED  |
-
-### Known Bugs
-
-There are no remaining known bugs, all of them have been fixed.
-
----
 
 ## Credits
 
