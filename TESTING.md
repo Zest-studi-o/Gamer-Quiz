@@ -11,6 +11,9 @@ What the site is about, mockup and live link.
 * [MANUAL TESTING](#MANUAL-TESTING)
   * [Testing User Stories](#Testing-User-Stories)
   * [Full Testing](#Full-Testing)
+* [BUG TRACKER](#BUG-TRACKER)
+  *  [Solved Bugs](#Solved-Bugs)
+  *  [Known Bugs](#known-Bugs)
 
 - - -
 
@@ -32,14 +35,6 @@ What the site is about, mockup and live link.
 
 ### JavaScript Validator
 
-[jshint](https://jshint.com/) was used to validate the JavaScript.
-
-* [javascript.js](testing/jshint/jshint-javascript.png) - Passed.
-* [game.js](testing/jshint/jshint-game.png) - Passed with one warning. Async functions are only available in ES8. It also stated that there are 4 unused variables, however these are being used.
-* [highscores.js](testing/jshint/jshint-highscores.png) - Passed.
-
-- - -
-
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
@@ -56,3 +51,17 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ### Testing User Stories
 
 ### Full Testing
+
+## BUG TRACKER
+
+### Solved Bugs
+
+| ID  | CLASS | FEATURE          | DESCRIPTION                                                                          | STEPS TO REPRODUCE                                                                                                                                                           | ACTUAL RESULT                                                                                                                                  | EXPECTED RESULT                                                            | ACTION                                                                                                        | STATUS |
+| --- | ----- | ---------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| 1   | A     | Location          | Issue                                                   | Steps to reproduce                                                                           | Actual result                                     | Expected result                            | Solution                                                              | FIXED OR NOT FIXED  |
+
+### Known Bugs
+
+There are no remaining known bugs, all of them have been fixed.
+
+---
