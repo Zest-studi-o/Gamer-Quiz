@@ -12,11 +12,28 @@
     margin: 0;
     box-sizing: border-box;
   }
+/* Full screen */
+html,
+body {
+  height: 100%;
+}
 
   /* Background image with a background colour to show if the image cannot load*/
 body {
-    background-image: url("../images/bg.jpg");
-    background-color: var(--black);
-    background-size: cover;
-    height: 100%;
+    
+background-color: var(--black);
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  line-height: 0px;
+  text-align: center;
   }
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.logo {
+    height: 100px;
+}
