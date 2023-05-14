@@ -131,7 +131,7 @@ General features.
 
 In the future, I would like to:
 
-- Abc.
+- Add a multiplayer version to the game.
 
 ### Accessibility
 
@@ -225,8 +225,11 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 ## Credits
 
 ### Code Used
+- [Emoji cursor app](https://www.emojicursor.app/)
+   I used this app to add the video game controller cursor.
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+- [Modals](https://www.youtube.com/watch?v=XH5OW46yO8I)
+   I used this video tutorial to help me with the modal windows.
 
 ### Content
 
