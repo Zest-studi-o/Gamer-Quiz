@@ -23,13 +23,44 @@
 </head>
 
 <body>
-    
+    <header>
+        <!--Logo aria label and link to home page-->
         <h1 class="heading">
-            <img class="logo" src="assets/images/logo.png" alt="logo"> 
+            <a href="index.html" aria-label="Link to the homepage"></a>
+            <a href="index.html">
+                <img class="logo" src="assets/images/logo.png" alt="logo"> 
+            </a>
         </h1>
+    </header>
+
+<!-- Outer container for the main content-->
+<div id="outer-container">
+    <h2>Welcome to The Gamer Quiz!</h2>
+    <p>Intro text</p>
+
+    <div class="buttons">
+      <button id="open-modal" class="btn">How to play</button>
+      <a href="game.html" class="btn">Play</a>
+      <a href="high-scores.html" id="high-scores" class="btn">High Scores</a>
+    </div>
+
+  </div>
+
+  <!-- Container for the modal-->
+  <div id="modal-container">
+    <div id="modal-content">
+      <h2>How To Play</h2>
+
+      <p>Instructions here</p>
+
+
+      <button id="close-modal" class="btn">Close</button>
+    </div>
+  </div>
+
     
-
-
+    <!--JavaScript-->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
