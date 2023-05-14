@@ -73,16 +73,15 @@ Project goals:
 ## Design
 
 ### Colour Scheme
-The site colour palette.
+The site colour palette is based on a technological theme so it could be associated with video games, this colour palette was created using coolors website.
+
+![Content](colour-palette.png)
 
 ### Typography
 
 The fonts were taken from Google Fonts:
 
-- Font 1.
-
-- Font 2.
-
+- [Content](https://fonts.google.com/specimen/Montserrat)
 
 ### Imagery
 
