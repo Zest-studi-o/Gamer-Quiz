@@ -81,7 +81,7 @@ The site colour palette is based on a technological theme so it could be associa
 
 The fonts were taken from Google Fonts:
 
-- [Content](https://fonts.google.com/specimen/Montserrat)
+- [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
 ### Imagery
 
@@ -118,8 +118,6 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 - High scores page
 
 ![High scores reframe](docs/wf-high-scores.png)
-
-
 
 ### Features
 
@@ -180,6 +178,8 @@ HTML, CSS and JS were used to create this website.
 
 [Techsini](https://techsini.com/multi-mockup/) - To generate individual mockups.
 
+[Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - To format the the api’s json response
+
 ---
 
 ## Deployment & Local Development
@@ -224,20 +224,27 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 ## Credits
 
 ### Code Used
-- [Emoji cursor app](https://www.emojicursor.app/)
-   I used this app to add the video game controller cursor.
+- [Emoji cursor app](https://www.emojicursor.app/) - I used this app to add the video game controller cursor.
 
-- [Modals](https://www.youtube.com/watch?v=XH5OW46yO8I)
-   I used this video tutorial to help me with the modal windows.
+- [Modals](https://www.youtube.com/watch?v=XH5OW46yO8I) - I used this video tutorial to help me with the modal windows.
+
+- [GET Data from API & Display in HTML with JavaScript Fetch API]( https://www.youtube.com/watch?v=zUcc4vW-jsI) - I used this video to teach me to fetch data from an API.
 
 ### Content
 
 - [Best Video Games Trivia](https://www.trivianerd.com/collection/video-games-trivia-questions)
+
 - [Beano](https://www.beano.com/posts/ultimate-gamer-quiz)
+
+- [Opendb](https://opentdb.com/api_config.php)
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+- [Freepik - starline - background](https://www.freepik.com/free-vector/abstract-geometric-neon-lights-line-3d-background_29887040.htm#&position=2&from_view=collections)
+
+- [Freepik - text effect](https://www.freepik.com/free-vector/realistic-gamer-text-effect_33301158.htm#&position=6&from_view=collections)
+
+- [Emojipedia - video game fav icon](https://emojipedia.org/video-game/)
 
 ### Acknowledgments
 
