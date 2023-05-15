@@ -178,6 +178,8 @@ HTML, CSS and JS were used to create this website.
 
 [Techsini](https://techsini.com/multi-mockup/) - To generate individual mockups.
 
+[Emoji cursor app](https://www.emojicursor.app/) - I used this app to add the video game controller cursor.
+
 [Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - To format the the api’s json response
 
 ---
@@ -224,11 +226,12 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 ## Credits
 
 ### Code Used
-- [Emoji cursor app](https://www.emojicursor.app/) - I used this app to add the video game controller cursor.
-
 - [Modals](https://www.youtube.com/watch?v=XH5OW46yO8I) - I used this video tutorial to help me with the modal windows.
 
 - [GET Data from API & Display in HTML with JavaScript Fetch API]( https://www.youtube.com/watch?v=zUcc4vW-jsI) - I used this video to teach me to fetch data from an API.
+
+- [Build a Quiz App - James Q Quick](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=1) - I used series of videos to teach me how to make a quiz app using html, css and js.
+
 
 ### Content
 
