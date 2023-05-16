@@ -11,6 +11,8 @@
     --baby-white: #FDFFFC;
     --pink: #f45BC9;
     --crisler-blue: #3B0CCA;
+    --crisler-blue-light: #4e1be9;
+    --medium-slate-blue: #7968ff;
     --mauve: #BDA5F6;
     --payne-grey: #637081;
   }
@@ -21,6 +23,7 @@
     margin: 0;
     box-sizing: border-box;
   }
+
 /* Full screen */
 html,
 body {
@@ -29,14 +32,14 @@ body {
 
 /* Background image with a background colour to show if the image cannot load*/
 body {
-  background-color: var(--black);
+  background-color: var(--oxford-blue);
   font-family: var(--content-text);
   background: url("../images/background.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
   }
 
-/* Logo section */
+/*---------- LOGO SECTION ----------*/
 .heading {
     text-align: center;
     font-size: 2.5rem;
@@ -49,7 +52,7 @@ body {
     filter: drop-shadow(5px 5px 5px var(--crisler-blue));
 }
 
-/* Headings and text */
+/*---------- HEADINGS & TEXT ----------*/
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -67,8 +70,20 @@ body {
     text-decoration: none;
   }
 
+/*---------- CONTAINERS ----------*/
+
+/* Flex container*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+  }
+
 /* Outer Container */
-#outer-container {
+.outer-container {
     background-color: var(--payne-grey);
     opacity: 0.9;
     width: 80%;
@@ -76,6 +91,9 @@ body {
     padding: 1rem;
     color: var(--baby-white);
     border-radius: 1.5rem;
+    border: 0.7rem solid var(--baby-white);  /* Thick border outside the box */
+    -webkit-filter: drop-shadow(5px 5px 5px var(--crisler-blue));
+    filter: drop-shadow(5px 5px 5px var(--crisler-blue));
   }
   
   /* Button Groups */
@@ -111,18 +129,8 @@ body {
   .btn[disabled]:hover {
     cursor: not-allowed;
   }
-  /*---------- MODAL ----------*/
+/*---------- MODALS ----------*/
 /* tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I*/
-
-/* Flex container*/
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-content: center;
-  }
 
 #modal-container {
     position: fixed;
@@ -133,24 +141,63 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--mauve);
-    opacity: 0;
+    background-color: var(--payne-grey);
+    opacity: 0; /* This hides the content in the modal*/
     pointer-events: none;
     transition: opacity 0.5s ease;
   }
-
-
-/* Style content */
-#modal-content {
+  
+  /* Change the modal opacity to be visible so it will show the content and set it back to default*/
+  #modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  /* Add a border with rounded corners and padding around the modal content */
+  #modal-content {
     width: 80%;
-    border: red 5px solid;
+    border: var(--mauve) 5px solid;
     border-radius: 1.5rem;
     padding: 2rem;
-    color: white;
+    color: var(--baby-white);
     text-align: center;
   }
   
-  /* margin to top of close modal button */
+  /* Add margin to top of close modal button */
   #close-modal {
     margin-top: 3rem;
   }
+
+/*---------- MEDIA QUERIES ----------*/
+
+/* Medium-small screens */
+@media screen and (max-width: 500px) {
+  .logo {
+    height: 2em;
+}
+}
+
+@media screen and (max-width: 420px) {
+h2{
+    font-size: 1.8rem;
+}
+
+    p {
+    font-size: 0.9rem;
+}
+
+.btn {
+    font-size: 1rem;
+}
+}
+
+/* Small screens */
+@media screen and (max-width: 375px) {
+  .logo {
+    height: 1.7em;
+}
+
+body {
+    background: var(--crisler-blue-light);
+}
+}
