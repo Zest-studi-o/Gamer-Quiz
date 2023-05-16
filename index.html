@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     <!-- Description and keywords for SEO -->
+    <meta name="description" content="An online themed quiz about gaming">
+    <meta name="keywords" content="video games, consoles, quiz, test, trivia, knowledge, game, gamer">
+
     <!-- Link to favicon -->
     <link rel='shortcut icon' type='image/x-icon' href='assets/images/fav-icon16x16px.svg' />
 
@@ -34,27 +38,27 @@
     </header>
 
 <!-- Outer container for the main content-->
-<div id="outer-container">
+<div class="outer-container">
     <h2>Welcome to The Gamer Quiz!</h2>
     <p>The Gamer Quiz is the ultimate gaming quiz. Are you a video game pro? This quiz will test your knowdledge in gaming.</p>
     <p> Select the buttons below to navigate across the different pages.</p>
-   <!--  <p>Select Play to start and then select the level of difficulty that you wish to take the quiz in and enjoy!</p>-->
+  
     <p>To go back to the home page simply click on the logo on the top.</p>
 
     <div class="buttons">
-      <button class="btn">How to play</button>
+      <button class="btn" id="open-modal">How to play</button>
       <a href="game.html" class="btn">Play</a>
       <a href="high-scores.html" id="high-scores" class="btn">High Scores</a>
     </div>
 
 </div>
-
+ <!--  Modal window to open and close how to play-->
   <!-- Container for the modal-->
   <div id="modal-container">
     <div id="modal-content">
       <h2>How To Play</h2>
 
-      <p>Instructions here</p>
+      <p>Select Play to start and then select the level of difficulty that you wish to take the quiz in and enjoy!</p>
 
       <button id="close-modal" class="btn">Close</button>
     </div>
