@@ -25,7 +25,46 @@
     <title>The Gamer Quiz! - Play</title>
 
 </head>
-<body>
 
+<body class="flex-container">
+    <header>
+        <!--Logo aria label and link to home page-->
+        <h1 class="heading">
+            <a href="index.html" aria-label="Link to the homepage"></a>
+            <a href="index.html">
+                <img class="logo" src="assets/images/logo.png" alt="logo"> 
+            </a>
+        </h1>
+    </header>
+
+    <!-- Outer container for the main content-->
+    <div class="outer-container">
+        
+        <!-- Here the QUIZ questions-->
+        <!-- group the buttons-->
+        <div id="game" class="buttons">
+          <h2 id="question">What is the answer to this questions?</h2>
+          <div class="choice-container btn">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text">Choice 1</p>
+          </div>
+          <div class="choice-container btn">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text">Choice 2</p>
+          </div>
+          <div class="choice-container btn">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text">Choice 3</p>
+          </div>
+          <div class="choice-container btn">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text">Choice 4</p>
+          </div>
+        </div>
+      </div>
 </body>
+
+<!--JavaScript-->
+<script src="assets/js/game.js"></script>
+
 </html>
