@@ -9,7 +9,7 @@
     --black: #000000;
     --oxford-blue: #000026;
     --baby-white: #FDFFFC;
-    --pink: #f45BC9;
+    --pink: #f45bc9;
     --crisler-blue-light: #4e1be9;
     --medium-slate-blue: #7968ff;
     --crisler-blue: #3B0CCA;
@@ -124,6 +124,7 @@ body {
     margin: 0.5rem;
   }
 
+  /*Hover effect*/
  /*   .hover-button:hover, .choice-container:hover{
     background-color: var(--periwinkle);
     color: var(--black);
@@ -133,6 +134,17 @@ body {
   .btn[disabled]:hover {
     cursor: not-allowed;
   }*/
+
+
+.choice-container:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+  }
 
 /* for buttons A, B, C, D*/
 .choice-container {
@@ -198,6 +210,22 @@ padding-top: 1.3em;
   /* Add margin to top of close modal button */
   #close-modal {
     margin-top: 3rem;
+  }
+
+/* ---------- HUD ----------*/
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .hud-main-text {
+    text-align: center;
   }
 
 /*---------- MEDIA QUERIES ----------*/

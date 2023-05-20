@@ -3,6 +3,9 @@
 const question = document.getElementById("question");
 //Gets an array of the choices
 const choices = Array.from(document.getElementsByClassName("choice-text"));
+//Hud
+const questionCounterText = document.getElementById("questionCounter");
+const scoreText = document.getElementById("score");
 
 //Variables
 let currentQuestion = {};
@@ -68,6 +71,8 @@ getNewQuestion = () => {
     return window.location.assign("/end.html");
   }
   questionCounter++;
+  questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;  //Hud - question counter
+
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
   question.innerText = currentQuestion.question;
@@ -94,7 +99,12 @@ getNewQuestion = () => {
       const selectedAnswer = selectedChoice.dataset["number"];
   
       const classToApply =
-        selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
+
+      //adds correct answer bonus
+      if (classToApply === "correct") {
+        incrementScore(CORRECT_BONUS);
+      }
   
       selectedChoice.parentElement.classList.add(classToApply); //the selected choice grabs the parent element and get the class to apply
   
@@ -105,5 +115,11 @@ getNewQuestion = () => {
       }, 1000);
     });
   });
+
+//Hud - score counter
+  incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+  };
   
   startGame();
