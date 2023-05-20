@@ -10,7 +10,8 @@
     --oxford-blue: #000026;
     --baby-white: #FDFFFC;
     --pink: #f45bc9;
-    --crisler-blue-light: #4e1be9;
+    --hover-bg: #c3d0e9;
+    --crisler-blue-light: #7249ef;
     --medium-slate-blue: #7968ff;
     --crisler-blue: #3B0CCA;
     --lavender-web: #F1ECFD;
@@ -135,16 +136,22 @@ body {
     cursor: not-allowed;
   }*/
 
-
+.hover-button:hover,
 .choice-container:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    /*   box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5) inset;*/
+    box-shadow: -2px -2px 5px rgba(86, 185, 235, 0.5) inset;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+    background-color: var( --hover-bg);
+    color: var(--black);
+    font-weight: bold;
   }
 
-  .btn[disabled]:hover {
+.btn[disabled]:hover {
     cursor: not-allowed;
-  }
+    box-shadow: none;
+    transform: none;
+}  
 
 /* for buttons A, B, C, D*/
 .choice-container {
@@ -164,13 +171,38 @@ padding-top: 1.3em;
   width: 100%;/*to load a new question when clicking it*/
 }
 
+
+/* FORMS */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+
 /*---------- CORRECT & INCORRECT FEEDBACK CLASSES ----------*/
+/*important so this overwrites the hover effect*/
 .correct {
-    background-color:var(--correct);
+    background-color:var(--correct)!important;
+    color: var(--baby-white)!important;
   }
   
 .incorrect {
-    background-color:var(--incorrect);
+    background-color:var(--incorrect)!important;
+    color: var(--baby-white)!important;
   }
 
 /*---------- MODALS ----------*/

@@ -22,8 +22,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
       <!--Page Title-->
-    <title>The Gamer Quiz! - Home Page</title>
-
+    <title>The Gamer Quiz! - Congrats!</title>
 </head>
 
 <body class="flex-container">
@@ -36,38 +35,32 @@
             </a>
         </h1>
     </header>
+<body>
 
-<!-- Outer container for the main content-->
-<div class="outer-container">
-    <h2>Welcome to The Gamer Quiz!</h2>
-    <p>The Gamer Quiz is the ultimate gaming quiz. Are you a video game pro? This quiz will test your knowdledge in gaming.</p>
-    <p> Select the buttons below to navigate across the different pages.</p>
-  
-    <p>To go back to the home page simply click on the logo on the top.</p>
-
-    <div class="buttons-container">
-      <button class="btn hover-button" id="open-modal">How to play</button>
-      <a href="game.html" class="btn hover-button">Play</a>
-      <a href="high-scores.html" id="high-scores" class="btn hover-button">High Scores</a>
+    <div class="outer-container">
+      <div id="end" class="buttons-container">
+        <h1 id="finalScore"></h1>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <button
+            type="submit"
+            class="btn hover-button"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+        <a class="btn hover-button" href="/game.html">Play Again</a>
+        <a class="btn hover-button" href="/">Go Home</a>
+      </div>
     </div>
-
-</div>
- <!--  Modal window to open and close how to play-->
-  <!-- Container for the modal-->
-  <div id="modal-container">
-    <div id="modal-content">
-      <h2>How To Play</h2>
-
-      <p>Select Play to start and then select the level of difficulty that you wish to take the quiz in and enjoy!</p>
-
-      <button id="close-modal" class="btn">Close</button>
-    </div>
-  </div>
-
-    
-    <!--JavaScript-->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/game.js"></script>
-</body>
-
+    <script src="end.js"></script>
+  </body>
 </html>

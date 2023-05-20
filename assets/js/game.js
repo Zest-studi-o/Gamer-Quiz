@@ -72,6 +72,7 @@ getNewQuestion = () => {
   }
   questionCounter++;
   questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;  //Hud - question counter
+  localStorage.setItem("mostRecentScore", score); //Stores scores
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
