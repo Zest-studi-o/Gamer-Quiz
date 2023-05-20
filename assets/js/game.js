@@ -85,24 +85,25 @@ getNewQuestion = () => {
  * Fetch the choices as the user clicks
  * allows to select and answer
  */
-choices.forEach(choice => {
-  choice.addEventListener("click", e => {
-    if (!acceptingAnswers) return;
-
-    acceptingAnswers = false;
-    const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
-
-    const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-
-    selectedChoice.parentElement.classList.add(classToApply);
-
-    setTimeout(() => {
-      selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
-    }, 1000);
+ choices.forEach(choice => {
+    choice.addEventListener("click", e => {
+      if (!acceptingAnswers) return;
+  
+      acceptingAnswers = false;
+      const selectedChoice = e.target;
+      const selectedAnswer = selectedChoice.dataset["number"];
+  
+      const classToApply =
+        selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
+  
+      selectedChoice.parentElement.classList.add(classToApply); //the selected choice grabs the parent element and get the class to apply
+  
+      //Delays the question to control the time in showing the feedback colour
+      setTimeout(() => {
+        selectedChoice.parentElement.classList.remove(classToApply);
+        getNewQuestion();
+      }, 1000);
+    });
   });
-});
-
-startGame();
+  
+  startGame();

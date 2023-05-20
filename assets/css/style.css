@@ -10,11 +10,15 @@
     --oxford-blue: #000026;
     --baby-white: #FDFFFC;
     --pink: #f45BC9;
-    --crisler-blue: #3B0CCA;
     --crisler-blue-light: #4e1be9;
     --medium-slate-blue: #7968ff;
+    --crisler-blue: #3B0CCA;
+    --lavender-web: #F1ECFD;
+    --periwinkle: #D7C8F9;
     --mauve: #BDA5F6;
     --payne-grey: #637081;
+    --correct:#28a745;
+    --incorrect:#dc3545;
   }
 
 /* Removes margins and padding */
@@ -120,20 +124,15 @@ body {
     margin: 0.5rem;
   }
 
-  .hover-button:hover{
-    background-color: var(--mauve);
+ /*   .hover-button:hover, .choice-container:hover{
+    background-color: var(--periwinkle);
     color: var(--black);
-  }
-
-  .choice-container:hover{
-   background-color: var(--mauve);
-   color: var(--black);
-   font-weight: bold;
+    font-weight: bold;
   }
   
   .btn[disabled]:hover {
     cursor: not-allowed;
-  }
+  }*/
 
 /* for buttons A, B, C, D*/
 .choice-container {
@@ -149,9 +148,18 @@ margin: -0.75em;
 padding-top: 1.3em;
   }
 
-/*.choice-text {
+.choice-text {
+  width: 100%;/*to load a new question when clicking it*/
+}
+
+/*---------- CORRECT & INCORRECT FEEDBACK CLASSES ----------*/
+.correct {
+    background-color:var(--correct);
+  }
   
-}*/
+.incorrect {
+    background-color:var(--incorrect);
+  }
 
 /*---------- MODALS ----------*/
 /* tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I*/
