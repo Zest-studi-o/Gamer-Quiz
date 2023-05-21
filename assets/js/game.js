@@ -5,6 +5,9 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 //Hud
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
+//Loader
+const loader = document.getElementById('loader');
+const game = document.getElementById('game');
 
 //Variables
 let currentQuestion = {};
@@ -63,6 +66,9 @@ startGame = () => {
   score = 0;
   availableQuesions = [...questions];
   getNewQuestion();
+  //To show and hide the loader
+  game.classList.remove('hidden');
+  loader.classList.add('hidden');
 };
 
 /**

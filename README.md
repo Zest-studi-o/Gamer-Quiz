@@ -234,11 +234,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 
 ### Content
-
-- [Best Video Games Trivia](https://www.trivianerd.com/collection/video-games-trivia-questions)
-
-- [Beano](https://www.beano.com/posts/ultimate-gamer-quiz)
-
+All questions were pulled from the following API:
 - [Opendb](https://opentdb.com/api_config.php)
 
 ###  Media
