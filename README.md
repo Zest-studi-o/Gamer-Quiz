@@ -182,6 +182,13 @@ HTML, CSS and JS were used to create this website.
 
 [Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - To format the the api’s json response
 
+[Bandicam](https://www.bandicam.com/es/) - To screen record bugs.
+
+[Windows photo feature](hhttps://www.microsoft.com/en-us/windows/photo-movie-editor) - To trim screen recording.
+
+[Veed](https://www.veed.io/convert/mp4-to-gif?gad=1&gclid=CjwKCAjwgqejBhBAEiwAuWHioCzHSc5XTTdsnixrxavlvLKEi4i_YeN__Xol0nANQCBhw60caeyF3RoC31wQAvD_BwE) - To convert mp4 to gif
+
+
 ---
 
 ## Deployment & Local Development
