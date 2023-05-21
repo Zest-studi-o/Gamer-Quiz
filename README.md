@@ -75,7 +75,7 @@ Project goals:
 ### Colour Scheme
 The site colour palette is based on a technological theme so it could be associated with video games, this colour palette was created using coolors website.
 
-![Content](colour-palette.png)
+![Content](docs/colour-palette.png)
 
 ### Typography
 
