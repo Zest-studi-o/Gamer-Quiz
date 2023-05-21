@@ -1,4 +1,3 @@
-
 //Pulls questions and choices
 const question = document.getElementById("question");
 //Gets an array of the choices
