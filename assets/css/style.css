@@ -1,5 +1,5 @@
 /* Google fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
  /*---------- FONTS STYLE ----------*/
@@ -99,6 +99,12 @@ body {
     border: 0.7rem solid var(--baby-white);  /* Thick border outside the box */
     -webkit-filter: drop-shadow(5px 5px 5px var(--crisler-blue));
     filter: drop-shadow(5px 5px 5px var(--crisler-blue));
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: column;
   }
   
   /* Button Groups */
@@ -106,6 +112,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
   }
 
   /*---------- BUTTON STYLING ----------*/
@@ -124,17 +131,6 @@ body {
     font-size: 1.5rem;
     margin: 0.5rem;
   }
-
-  /*Hover effect*/
- /*   .hover-button:hover, .choice-container:hover{
-    background-color: var(--periwinkle);
-    color: var(--black);
-    font-weight: bold;
-  }
-  
-  .btn[disabled]:hover {
-    cursor: not-allowed;
-  }*/
 
 .hover-button:hover,
 .choice-container:hover {
@@ -301,6 +297,11 @@ form {
   }
 
 /*---------- MEDIA QUERIES ----------*/
+@media screen and (max-width:  700px) {
+	.hud-prefix {
+		font-size: unset;
+	}
+}
 
 /* Medium-small screens */
 @media screen and (max-width: 500px) {
