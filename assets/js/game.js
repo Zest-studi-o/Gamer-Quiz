@@ -16,12 +16,28 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 
+
 //Fetch questions from API
 let questions = [];
-fetch(
-    'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
-)
-    .then((res) => {
+
+//console.log(window.location.href.includes('medium'))
+
+//Fetch easy questions from API
+if (window.location.href.includes('easy')) {
+    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple'
+} else if(window.location.href.includes('medium')) {
+//Fetch medium questions from API
+    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple'
+} else {
+//Fetch hard questions from API
+//(window.location.href.includes('hard'));
+    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=hard&type=multiple'
+}
+
+
+
+fetch(url)
+.then((res) => {
         return res.json(); //Return promise
     })
     .then((loadedQuestions) => {
@@ -47,15 +63,15 @@ fetch(
 
         startGame();
     })
-    .catch((err) => { //Error message
-        console.error(err);
-    });
+    // // .catch((err) => { //Error message
+    // //     console.error(err);
+    // });
 
 //CONSTANTS
 //How much its worth when getting an answer correct
 const CORRECT_BONUS = 10;
 //How many questions a user gets before they finish
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
 /**
  * Start the game at 0, copy the questions from questions array
@@ -133,4 +149,3 @@ getNewQuestion = () => {
     score += num;
     scoreText.innerHTML = score;
   };
-  

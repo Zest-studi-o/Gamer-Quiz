@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
       <!--Page Title-->
-    <title>The Gamer Quiz! - Congrats!</title>
+    <title>The Gamer Quiz! - Play</title>
+
 </head>
 
 <body class="flex-container">
@@ -35,32 +36,30 @@
             </a>
         </h1>
     </header>
-<body>
 
-    <div class="outer-container">
-      <div id="end" class="buttons-container">
-        <h1 id="finalScore"></h1>
-        <form>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="username"
-          />
-          <button
-            type="submit"
-            class="btn hover-button"
-            id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-            disabled
-          >
-            Save
-          </button>
-        </form>
-        <a class="btn hover-button" href="/game-select.html">Play Again</a>
-        <a class="btn hover-button" href="/">Go Home</a>
-      </div>
-    </div>
-    <script src="assets/js/end.js"></script>
-  </body>
+    <!-- Outer container for the main content-->
+<div class="outer-container">
+
+    
+
+        <h2>Select the Quiz level</h2>
+        <div class="buttons-container">
+        <!-- Difficullty level buttons
+        <button class="btn difficulty hover-button" onclick="easyQuiz()">Easy</button>
+        <button class="btn difficulty hover-button" onclick="mediumQuiz()">Medium</button>
+        <button class="btn difficulty hover-button" onclick="hardQuiz()">Hard</button>
+        
+        <a id="myLink" href="#" onclick="MyFunction();">link text</a>
+    -->
+        <a href="game-easy.html" id="easy" class="btn hover-button">Easy</a>
+        <a href="game-medium.html" id="medium" class="btn hover-button">Medium</a>
+        <a href="game-hard.html" id="hard" class="btn hover-button">Hard</a>
+        </div>
+    
+
+</div>
+
+<!--JavaScript-->
+<script src="assets/js/game.js"></script>
+
 </html>
