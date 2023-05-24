@@ -2,14 +2,14 @@
 const question = document.getElementById("question");
 //Gets an array of the choices
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-//Hud
+//To count the player score
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
 //Loader
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 
-//Variables
+//Game related variables
 let currentQuestion = {};
 let acceptingAnswers = false; //the user can not answer before it is ready
 let score = 0;
@@ -19,8 +19,6 @@ let availableQuesions = [];
 
 //Fetch questions from API
 let questions = [];
-
-//console.log(window.location.href.includes('medium'))
 
 //Fetch easy questions from API
 if (window.location.href.includes('easy')) {
@@ -61,11 +59,13 @@ fetch(url)
             return formattedQuestion;
         });
 
-        startGame();
+        if (questionCounterText) {
+            startGame();
+          }
     })
-    // // .catch((err) => { //Error message
-    // //     console.error(err);
-    // });
+    .catch((err) => { //Error message
+       console.error(err);
+     });
 
 //CONSTANTS
 //How much its worth when getting an answer correct
