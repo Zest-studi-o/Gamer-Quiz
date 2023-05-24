@@ -2,6 +2,8 @@
 
 What the site is about, mockup and live link.
 
+[Live link](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
+
 # Table of contents
 
 - [User Experience (UX)](#User-Experience-UX)
@@ -170,7 +172,7 @@ HTML, CSS and JS were used to create this website.
 
 [Photoshop](https://www.adobe.com/ie/products/photoshop.html) - To edit, resize, crop to size and web optimise imagery.
 
-[Illustrator](https://www.adobe.com/ie/products/illustrator.html) - For the fav icon creation.
+[Illustrator](https://www.adobe.com/ie/products/illustrator.html) - For the fav icon creation and to edit the text effect template.
 
 [Shields](https://shields.io/) - To add badges to the readme file.
 
@@ -184,7 +186,7 @@ HTML, CSS and JS were used to create this website.
 
 [Bandicam](https://www.bandicam.com/es/) - To screen record bugs.
 
-[Windows photo feature](hhttps://www.microsoft.com/en-us/windows/photo-movie-editor) - To trim screen recording.
+[Windows photo feature](https://www.microsoft.com/en-us/windows/photo-movie-editor) - To trim screen recording.
 
 [Veed](https://www.veed.io/convert/mp4-to-gif?gad=1&gclid=CjwKCAjwgqejBhBAEiwAuWHioCzHSc5XTTdsnixrxavlvLKEi4i_YeN__Xol0nANQCBhw60caeyF3RoC31wQAvD_BwE) - To convert mp4 to gif
 
@@ -235,10 +237,8 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 ### Code Used
 - [Modals](https://www.youtube.com/watch?v=XH5OW46yO8I) - I used this video tutorial to help me with the modal windows.
 
-- [GET Data from API & Display in HTML with JavaScript Fetch API]( https://www.youtube.com/watch?v=zUcc4vW-jsI) - I used this video to teach me to fetch data from an API.
-
-- [Build a Quiz App - James Q Quick](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=1) - I used series of videos to teach me how to make a quiz app using html, css and js.
-
+- [Build a Quiz App - James Q Quick](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=1) I used this series of videos to teach me how to make a quiz app using html, css and js.
+This tutorial builds up on the Code Institute content, teaching how to develop and add features to a QUIZ app, such as a highscores page or save user data to local storage, the tutorial goes further and also explain how to fetch data from an API to display the questions.
 
 ### Content
 All questions were pulled from the following API:
@@ -255,3 +255,4 @@ All questions were pulled from the following API:
 ### Acknowledgments
 
 - [Derek MCAuley](https://github.com/derekmcauley7), my Code Institute Mentor.
+- Tutor support at Code Institute.
