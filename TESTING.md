@@ -23,11 +23,11 @@ What the site is about, mockup and live link.
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [index.html](testing/w3/w3-index.png) - Passed.
-* [game.html](testing/w3/w3-game.png) - No errors, 1 Warning. The warning is for an empty H2 tag. This is where the question is inserted using jQuery.
-* [highscores.html](testing/w3/w3-highscores.png) - Passed.
-* [404.html](testing/w3/w3-404.png) - Passed.
-* [style.css](testing/w3/w3-css.png) - Passed, no errors found.
+* [index.html](testing/w3/w3-index.png) - .
+* [game.html](testing/w3/w3-game.png) - .
+* [high-scores.html](testing/w3/w3-highscores.png) - .
+* [404.html](testing/w3/w3-404.png) - .
+* [style.css](testing/w3/w3-css.png) - .
 
 - - -
 

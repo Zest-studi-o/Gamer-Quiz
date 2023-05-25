@@ -2,70 +2,26 @@
 const question = document.getElementById("question");
 //Gets an array of the choices
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-//To count the player score
+//Player score counter
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
 //Loader
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 
-//Game related variables
+// Default Variables
 let currentQuestion = {};
 let acceptingAnswers = false; //the user can not answer before it is ready
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 
-
 //Fetch questions from API
 let questions = [];
 
-//Fetch easy questions from API
-if (window.location.href.includes('easy')) {
-    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple'
-} else if(window.location.href.includes('medium')) {
-//Fetch medium questions from API
-    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple'
-} else {
-//Fetch hard questions from API
-//(window.location.href.includes('hard'));
-    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=hard&type=multiple'
-}
+setGameLevel();
 
-
-
-fetch(url)
-.then((res) => {
-        return res.json(); //Return promise
-    })
-    .then((loadedQuestions) => {
-        questions = loadedQuestions.results.map((loadedQuestion) => {
-            const formattedQuestion = {
-                question: loadedQuestion.question,
-            };
-
-            const answerChoices = [...loadedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-            answerChoices.splice(
-                formattedQuestion.answer - 1,
-                0,
-                loadedQuestion.correct_answer
-            );
-
-            answerChoices.forEach((choice, index) => {
-                formattedQuestion['choice' + (index + 1)] = choice;
-            });
-
-            return formattedQuestion;
-        });
-
-        if (questionCounterText) {
-            startGame();
-          }
-    })
-    .catch((err) => { //Error message
-       console.error(err);
-     });
+fetchQuestionsFromAPI();
 
 //CONSTANTS
 //How much its worth when getting an answer correct
@@ -73,11 +29,64 @@ const CORRECT_BONUS = 10;
 //How many questions a user gets before they finish
 const MAX_QUESTIONS = 5;
 
+function setGameLevel() {
+  //Fetch easy questions from API
+  if (window.location.href.includes('easy')) {
+    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple';
+  } else if (window.location.href.includes('medium')) {
+    //Fetch medium questions from API
+    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple';
+  } else {
+    //Fetch hard questions from API
+    url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=hard&type=multiple';
+  }
+}
+
+ /**
+ * Loads the questions
+ * Get quesions from opentdb
+ */
+function fetchQuestionsFromAPI() {
+  fetch(url)
+    .then((res) => {
+      return res.json(); //Return promise
+    })
+    .then((loadedQuestions) => {
+      questions = loadedQuestions.results.map((loadedQuestion) => {
+        const formattedQuestion = {
+          question: loadedQuestion.question,
+        };
+
+        const answerChoices = [...loadedQuestion.incorrect_answers];
+        formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+        answerChoices.splice(
+          formattedQuestion.answer - 1,
+          0,
+          loadedQuestion.correct_answer
+        );
+
+        answerChoices.forEach((choice, index) => {
+          formattedQuestion['choice' + (index + 1)] = choice;
+        });
+
+        return formattedQuestion;
+      });
+      if (questionCounterText) {
+        startGame();
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      //redirecting to 404 page if api request fails
+      window.location.replace("./404.html");
+    });
+}
+
 /**
  * Start the game at 0, copy the questions from questions array
  * and they are put into a new array
  */
-startGame = () => {
+function startGame() {
   questionCounter = 0;
   score = 0;
   availableQuesions = [...questions];
@@ -95,7 +104,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {//if there are no questions left in the array or question counter gets to max
     //go to the end html page
-    return window.location.assign("/end.html");
+    return window.location.assign("./end.html");
   }
   questionCounter++;
   questionCounterText.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;  //Hud - question counter
@@ -104,12 +113,12 @@ getNewQuestion = () => {
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
   question.innerHTML = currentQuestion.question;
-
+​
   choices.forEach(choice => {
     const number = choice.dataset["number"];
     choice.innerHTML = currentQuestion["choice" + number];
   });
-
+​
   availableQuesions.splice(questionIndex, 1); //the questions are not repeated
   acceptingAnswers = true; //allow user to answer
 };
@@ -129,7 +138,7 @@ getNewQuestion = () => {
       const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
 
-      //adds correct answer bonus
+      //Adds correct answer bonus
       if (classToApply === "correct") {
         incrementScore(CORRECT_BONUS);
       }
@@ -144,7 +153,7 @@ getNewQuestion = () => {
     });
   });
 
-//Hud - score counter
+//Score counter
   incrementScore = num => {
     score += num;
     scoreText.innerHTML = score;
