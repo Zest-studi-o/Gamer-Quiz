@@ -42,6 +42,7 @@ body {
   background: url("../images/background.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
+  height: 100%;
   }
 
 /*---------- LOGO SECTION ----------*/
@@ -59,10 +60,7 @@ body {
 
 /*---------- HEADINGS & TEXT ----------*/
   h2 {
-    font-size: 2rem;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
   
   p {
@@ -75,35 +73,38 @@ body {
     text-decoration: none;
   }
 
-/*---------- CONTAINERS ----------*/
+  #question{
+  padding: 2em 2em;
+  }
 
-/* Flex container*/
+/*---------- CONTAINERS ----------*/
+ /* 
+Flex container*/
 .flex-container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-   /*  height: 100vh;*/
+    height: auto;
     justify-content: center;
     align-content: center;
   }
 
 /* Outer Container */
 .outer-container {
-    background-color: var(--payne-grey);
+  /*  background-color: var(--payne-grey);*/
     opacity: 0.9;
     width: 80%;
     margin: auto;
     padding: 1rem;
     color: var(--baby-white);
     border-radius: 1.5rem;
-    border: 0.7rem solid var(--baby-white);  /* Thick border outside the box */
+  /*  border: 0.7rem solid var(--baby-white);   Thick border outside the box */
     -webkit-filter: drop-shadow(5px 5px 5px var(--crisler-blue));
     filter: drop-shadow(5px 5px 5px var(--crisler-blue));
 
     display: flex;
     justify-content:center;
     align-items: center;
-   /* min-height: 50vh;*/
+    /*   min-height: 50vh;*/
     flex-direction: column;
   }
   
@@ -116,7 +117,6 @@ body {
   }
 
   /*---------- BUTTON STYLING ----------*/
-
 .btn {
     font-family: var(--content-text);
     font-weight: 500;
@@ -240,21 +240,19 @@ form {
     margin-top: 3rem;
   }
 
-/* ---------- HUD ----------*/
-
-#hud {
+/* ---------- SCOREBOARD ----------*/
+#scoreboard {
     display: flex;
     justify-content: space-between;
   }
   
-  .hud-prefix {
+  .scoreboard-prefix {
     text-align: center;
     font-size: 1.2rem;
-   
     font-weight: bold;
   }
   
-  .hud-main-text {
+  .scoreboard-main-text {
     text-align: center;
   }
 
@@ -265,7 +263,12 @@ form {
     border-top: 1.6rem solid #56a5eb;
     width: 12rem;
     height: 12rem;
-    animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite; 
+
+    position: absolute;
+    margin: auto;
+    top: 500%;
+    
   }
   
   @keyframes spin {
@@ -275,6 +278,13 @@ form {
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
   }
 
 /*---------- TO HIDE CONTENT ----------*/
@@ -299,24 +309,37 @@ form {
   }
 
 /*---------- MEDIA QUERIES ----------*/
+@media screen and (max-width:  1100px){
+    #question{
+        padding: 1em 1em;
+          }
+          .logo {
+            height: 2.5em;
+          }
+
+}
+
 @media screen and (max-width:  700px) {
-	.hud-prefix {
+	.scoreboard-prefix {
 		font-size: unset;
 	}
+.outer-container{
+    background-color: unset;
+    border: unset;
+}
 }
 
 /* Medium-small screens */
 @media screen and (max-width: 500px) {
   .logo {
-    height: 2em;
+    height: 1.5em;
+}
+h2{
+    font-size: 1.5rem;
 }
 }
 
 @media screen and (max-width: 420px) {
-h2{
-    font-size: 1.8rem;
-}
-
     p {
     font-size: 0.9rem;
 }
@@ -329,10 +352,10 @@ h2{
 /* Small screens */
 @media screen and (max-width: 375px) {
   .logo {
-    height: 1.7em;
+    height: 1.2em;
 }
 
-body {
-    background: var(--crisler-blue-light);
+#question {
+    font-size: clamp(1rem, 0.1765rem + 3.7647vw, 3rem);   
 }
 }

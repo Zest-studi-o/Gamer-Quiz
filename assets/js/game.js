@@ -107,18 +107,18 @@ getNewQuestion = () => {
     return window.location.assign("./end.html");
   }
   questionCounter++;
-  questionCounterText.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;  //Hud - question counter
+  questionCounterText.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;  //Scoreboard - question counter
   localStorage.setItem("mostRecentScore", score); //Stores scores
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
   currentQuestion = availableQuesions[questionIndex];
   question.innerHTML = currentQuestion.question;
-​
+
   choices.forEach(choice => {
     const number = choice.dataset["number"];
     choice.innerHTML = currentQuestion["choice" + number];
   });
-​
+
   availableQuesions.splice(questionIndex, 1); //the questions are not repeated
   acceptingAnswers = true; //allow user to answer
 };
