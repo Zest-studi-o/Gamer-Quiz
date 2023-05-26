@@ -1,9 +1,11 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
 
 :root {
  /*---------- FONTS STYLE ----------*/
  --content-text: 'Montserrat', sans-serif;
+ --display-text: 'Press Start 2P', cursive;
   
 /*---------- COLOURS ----------*/
     --black: #000000;
@@ -73,6 +75,12 @@ body {
     text-decoration: none;
   }
 
+  .intro-text>h2,
+  #modal-content>h2{
+    font-family: var(--display-text);
+    padding: 3em 0em 2em;
+  }
+
   #question{
   padding: 2em 2em;
   }
@@ -91,10 +99,10 @@ Flex container*/
 /* Outer Container */
 .outer-container {
   /*  background-color: var(--payne-grey);*/
-    opacity: 0.9;
+    /*   opacity: 0.9;*/
     width: 80%;
     margin: auto;
-    padding: 1rem;
+    /*  padding: 1rem;*/
     color: var(--baby-white);
     border-radius: 1.5rem;
   /*  border: 0.7rem solid var(--baby-white);   Thick border outside the box */
@@ -160,13 +168,13 @@ color: var(--oxford-blue);
 font-weight: bold;
 border-radius: 2em 0em 0em 2em;
 margin: -0.75em;
-padding-top: 1.3em;
-  }
+display: flex;
+align-items: center;
+ }
 
 .choice-text {
   width: 100%;/*to load a new question when clicking it*/
 }
-
 
 /* FORMS */
 form {
@@ -234,6 +242,8 @@ form {
     color: var(--baby-white);
     text-align: center;
   }
+
+
   
   /* Add margin to top of close modal button */
   #close-modal {
@@ -265,10 +275,10 @@ form {
     height: 12rem;
     animation: spin 2s linear infinite; 
 
+/* To position the loader*/
     position: absolute;
     margin: auto;
-    top: 500%;
-    
+    top: 500%; 
   }
   
   @keyframes spin {
@@ -309,25 +319,43 @@ form {
   }
 
 /*---------- MEDIA QUERIES ----------*/
-@media screen and (max-width:  1100px){
+@media screen and (max-width: 1100px){
     #question{
         padding: 1em 1em;
+        font-size: 1.4em;
           }
           .logo {
-            height: 2.5em;
+            height: 2.2em;
           }
 
+          .intro-text>h2 {
+            padding: .8em 0em 1em;
+        }
+        .heading{
+            margin-top: 0.5em;
+        }
+        .outer-container {
+            width: 90%;
+        } 
+
+        .scoreboard-prefix {
+            font-size: 1em;
+        }
+
+        .scoreboard-main-text{
+            font-size: 1.5em;
+        }
 }
 
 @media screen and (max-width:  700px) {
 	.scoreboard-prefix {
 		font-size: unset;
 	}
-.outer-container{
-    background-color: unset;
-    border: unset;
+    .outer-container {
+        width: 95%
+    }
 }
-}
+
 
 /* Medium-small screens */
 @media screen and (max-width: 500px) {
@@ -337,6 +365,8 @@ form {
 h2{
     font-size: 1.5rem;
 }
+
+
 }
 
 @media screen and (max-width: 420px) {
@@ -347,6 +377,14 @@ h2{
 .btn {
     font-size: 1rem;
 }
+
+.intro-text>h2,
+#modal-content>h2{
+    padding: .5em 0em .7em;
+    line-height: 160%;
+    font-size: 1.2em;
+}
+
 }
 
 /* Small screens */
@@ -354,8 +392,13 @@ h2{
   .logo {
     height: 1.2em;
 }
+.intro-text>h2,
+#modal-content>h2{
+    padding: .4em 0em .6em;
+    line-height: 150%;
+}
 
-#question {
+#question, .intro-text >h2{
     font-size: clamp(1rem, 0.1765rem + 3.7647vw, 3rem);   
 }
 }

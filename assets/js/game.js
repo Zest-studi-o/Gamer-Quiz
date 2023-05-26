@@ -3,7 +3,7 @@ const question = document.getElementById("question");
 //Gets an array of the choices
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 //Player score counter
-const questionCounterText = document.getElementById("questionCounter");
+const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score");
 //Loader
 const loader = document.getElementById('loader');
