@@ -27,7 +27,7 @@ fetchQuestionsFromAPI();
 //How much its worth when getting an answer correct
 const CORRECT_BONUS = 10;
 //How many questions a user gets before they finish
-const MAX_QUESTIONS = 5;
+const MAX_QUESTIONS = 10;
 
 function setGameLevel() {
   //Fetch easy questions from API

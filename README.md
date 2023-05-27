@@ -51,8 +51,8 @@ how the website can help users meet their needs.
 Project goals:
 - To encourage people to take the gamer quiz.
 - To let users select different levels of difficulty.
-- To provide users with feedback so that they know what they have got wrong and learn the correct anwser.
-- To allow the users to save their scores and appear on the leaderboard to make it more competitive and appealing to play.
+- To provide users with feedback so that they know what they have got wrong and learn the correct answer.
+- To allow the users to save their scores and appear on the leader-board to make it more competitive and appealing to play.
 
 ### User Stories
 
@@ -67,7 +67,7 @@ Project goals:
 - As a returning visitor, I want to select the level of difficulty so that I can play in different modes and test further my knowledge. 
 
 #### Frequent Visitor Goals
-- As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as posible to improve. 
+- As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as possible to improve. 
 - As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank in the leaderboards.
 
 ---

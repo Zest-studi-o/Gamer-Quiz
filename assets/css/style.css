@@ -58,6 +58,8 @@ body {
     height: 100px;
     -webkit-filter: drop-shadow(5px 5px 5px var(--crisler-blue));
     filter: drop-shadow(5px 5px 5px var(--crisler-blue));
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎮</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    
 }
 
 /*---------- HEADINGS & TEXT ----------*/
@@ -78,12 +80,17 @@ body {
   .intro-text>h2,
   #modal-content>h2{
     font-family: var(--display-text);
-    padding: 3em 0em 2em;
+      padding: 1em 0em 1.2em;
   }
-
-  #question{
+  .intro-text{
+    padding:2em 2em;
+  }
+  
+  #question,  
+  #select-heading{
   padding: 2em 2em;
   }
+  
 
 /*---------- CONTAINERS ----------*/
  /* 
@@ -98,21 +105,16 @@ Flex container*/
 
 /* Outer Container */
 .outer-container {
-  /*  background-color: var(--payne-grey);*/
-    /*   opacity: 0.9;*/
     width: 80%;
     margin: auto;
-    /*  padding: 1rem;*/
     color: var(--baby-white);
     border-radius: 1.5rem;
-  /*  border: 0.7rem solid var(--baby-white);   Thick border outside the box */
     -webkit-filter: drop-shadow(5px 5px 5px var(--crisler-blue));
     filter: drop-shadow(5px 5px 5px var(--crisler-blue));
 
     display: flex;
     justify-content:center;
     align-items: center;
-    /*   min-height: 50vh;*/
     flex-direction: column;
   }
   
@@ -142,7 +144,6 @@ Flex container*/
 
 .hover-button:hover,
 .choice-container:hover {
-    /*   box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5) inset;*/
     box-shadow: -2px -2px 5px rgba(86, 185, 235, 0.5) inset;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
@@ -243,8 +244,6 @@ form {
     text-align: center;
   }
 
-
-  
   /* Add margin to top of close modal button */
   #close-modal {
     margin-top: 3rem;
@@ -264,6 +263,11 @@ form {
   
   .scoreboard-main-text {
     text-align: center;
+  }
+
+  .player-score, 
+  #finalScore{
+    font-family: var(--display-text);
   }
 
 /*---------- LOADER ----------*/
@@ -308,9 +312,19 @@ form {
     padding-left: 0;
     margin-bottom: 4rem;
   }
+
+  .player-score{
   
+  padding: 2em;
+  }
+
+  #finalScore{
+    padding: 0.5em;
+
+  }
+ 
   .high-score {
-    font-size: 2.8rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
   
