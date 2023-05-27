@@ -252,6 +252,10 @@ All questions were pulled from the following API:
 
 - [Freepik - text effect](https://www.freepik.com/free-vector/realistic-gamer-text-effect_33301158.htm#&position=6&from_view=collections)
 
+- [Freepik - glitch effect background](https://www.freepik.com/free-vector/glitch-background_3865410.html)
+
+- [Freepik - 404 vector](https://www.freepik.com/free-vector/glitch-error-404-page-background_3916183.html)
+
 - [Emojipedia - video game fav icon](https://emojipedia.org/video-game/)
 
 ### Acknowledgments

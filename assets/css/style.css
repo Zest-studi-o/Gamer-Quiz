@@ -45,6 +45,28 @@ body {
   background-size: cover;
   text-align: center;
   height: 100%;
+  background-size: 100% 100%;
+}
+
+/*---------- 404 PAGE ----------*/
+.background-error {
+  background: url("../images/404-bg.png") no-repeat center center;
+  background-color: var(--oxford-blue);
+  background-size: cover;
+}
+
+.error {
+  text-align: center;
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+  justify-items: center;
+}
+
+.outer-container>h1 {
+  font-family: var(--display-text);
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 /*---------- LOGO SECTION ----------*/
@@ -60,7 +82,6 @@ body {
   filter: drop-shadow(5px 5px 5px var(--crisler-blue));
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎮</text></svg>") 16 0, auto;
   /*!emojicursor.app*/
-
 }
 
 /*---------- HEADINGS & TEXT ----------*/
@@ -207,12 +228,10 @@ input::placeholder {
 /*important so this overwrites the hover effect*/
 .correct {
   background-color: var(--correct) !important;
-  color: var(--baby-white) !important;
 }
 
 .incorrect {
   background-color: var(--incorrect) !important;
-  color: var(--baby-white) !important;
 }
 
 /*---------- MODALS ----------*/
@@ -380,6 +399,18 @@ input::placeholder {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .error-page-container {
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .intro-text>h2 {
+    font-size: 1.2em;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .scoreboard-prefix {
     font-size: unset;
@@ -397,13 +428,17 @@ input::placeholder {
 
 
 /* Medium-small screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .logo {
     height: 1.7em;
   }
 
   h2 {
     font-size: 1.5rem;
+  }
+
+  .intro-text {
+    padding: 1em 1em;
   }
 }
 
@@ -434,6 +469,10 @@ input::placeholder {
     padding: .5em 0em .7em;
     line-height: 160%;
     font-size: 1.2em;
+  }
+
+  .error-page-container {
+    padding-top: 50%;
   }
 
 }
