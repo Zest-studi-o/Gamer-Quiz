@@ -2,61 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Description and keywords for SEO -->
-    <meta name="description" content="An online themed quiz about gaming">
-    <meta name="keywords" content="video games, consoles, quiz, test, trivia, knowledge, game, gamer">
+  <!-- Description and keywords for SEO -->
+  <meta name="description" content="An online themed quiz about gaming">
+  <meta name="keywords" content="video games, consoles, quiz, test, trivia, knowledge, game, gamer">
 
-    <!-- Link to favicon -->
-    <link rel='shortcut icon' type='image/x-icon' href='assets/images/fav-icon16x16px.svg' />
+  <!-- Link to favicon -->
+  <link rel='shortcut icon' type='image/x-icon' href='assets/images/fav-icon16x16px.svg' />
 
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-      <!--Page Title-->
-    <title>The Gamer Quiz! - Congrats!</title>
+  <!--Page Title-->
+  <title>The Gamer Quiz! - Congrats!</title>
 </head>
 
 <body class="flex-container">
-    <header>
-        <!--Logo aria label and link to home page-->
-        <h1 class="heading">
-            <a href="index.html" aria-label="Link to the homepage"></a>
-            <a href="index.html">
-                <img class="logo" src="assets/images/logo.png" alt="logo"> 
-            </a>
-        </h1>
-    </header>
-<body>
-  
+  <header>
+    <!--Logo aria label and link to home page-->
+    <h1 class="heading">
+      <a href="index.html" aria-label="Link to the homepage"></a>
+      <a href="index.html">
+        <img class="logo" src="assets/images/logo.png" alt="logo">
+      </a>
+    </h1>
+  </header>
+
+  <body>
+
     <div class="outer-container">
       <div id="end" class="buttons-container">
         <div id="highScores" class="flex-center flex-column">
-          
-<!--Trophy font awesome-->
-<i class="fa-solid fa-trophy-star" style="color: #ffffff;"></i>
 
-            <h2 id="finalScore">High Scores</h2>
+          <!--Trophy font awesome-->
+          <i class="trophy fa-solid fa-trophy fa-2xl"></i>
+          <!--Final score heading -->
+          <h2 id="finalScore">High Scores</h2>
 
-          
-            <ul id="highScoresList"></ul>
-            <a class="btn hover-button" href="index.html">Go Home</a>
+          <!--Hight scores list-->
+          <ul id="highScoresList"></ul>
+          <a class="btn hover-button" href="index.html">Go Home</a>
         </div>
       </div>
     </div>
     <script src="assets/js/high-scores.js"></script>
-    
-  <!-- Font Awesome Script -->
-  <script src="https://kit.fontawesome.com/af51085c1b.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/af51085c1b.js" crossorigin="anonymous"></script>
 
   </body>
+
 </html>
