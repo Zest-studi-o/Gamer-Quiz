@@ -124,7 +124,9 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 ### Features
 
 #### Existing Features
-General features.
+
+##### High scores page
+![High scores](docs/high-scores.png)
 
 ### Features Left to Implement
 
@@ -254,7 +256,7 @@ All questions were pulled from the following API:
 
 - [Freepik - glitch effect background](https://www.freepik.com/free-vector/glitch-background_3865410.html)
 
-- [Freepik - 404 vector](https://www.freepik.com/free-vector/glitch-error-404-page-background_3916183.html)
+- [Freepik - 404 vector](https://www.freepik.com/free-vector/glitch-error-404-page-background_3916183.htm#&position=0&from_view=collections)
 
 - [Emojipedia - video game fav icon](https://emojipedia.org/video-game/)
 
