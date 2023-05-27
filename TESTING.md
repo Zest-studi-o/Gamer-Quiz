@@ -17,6 +17,11 @@ What the site is about, mockup and live link.
 
 - - -
 
+Manual testing was carried out as soon as the project started using exploratory testing techniques and a list of bugs was identified and placed in a table to tackle.
+At the same time as building each page, the site was tested in different screen sizes using developer tools to better adjust the design and make sure that it is responsive in all screen sizes.
+Afterwards, formal test cases were developed and executed.
+Automated testing was carried out at a later stage using validators and all errors were fixed, it was checked that all user goals are met and after this, a test case table was created to test the website using different devices and screen sizes. To finish, the project was shared in Slack for peer review.
+
 ## AUTOMATED TESTING
 
 ### W3C Validator
@@ -37,7 +42,24 @@ What the site is about, mockup and live link.
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
-![High scores pages](docs/testing/lighthouse/lh-high-scores.png)
+
+#### Desktop Results
+
+![Home Page](docs/testing/lighthouse/lh-home-desktop.png)
+![Game Page](docs/testing/lighthouse/lh-home-desktop.png)
+![High scores pages](docs/testing/lighthouse/lh-high-scores-desktop.png)
+![End Page](docs/testing/lighthouse/lh-end-desktop.png)
+![404](docs/testing/lighthouse/lh-404-desktop.png)
+
+#### Mobile Results
+
+![Home Page](docs/testing/lighthouse/lh-home-mobile.png)
+![Game Page](docs/testing/lighthouse/lh-home-mobile.png)
+![High scores pages](docs/testing/lighthouse/lh-high-scores-mobile.png)
+![End Page](docs/testing/lighthouse/lh-end-mobile.png)
+![404](docs/testing/lighthouse/lh-404-mobile.png)
+---
+
 
 ### Desktop Results
 
