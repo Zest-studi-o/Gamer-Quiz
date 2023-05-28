@@ -1,10 +1,10 @@
 # THE GAMER QUIZ
 
-What the site is about, mockup and live link.
-
 ![The Gamer Quiz](docs/project.png)
 
-[Live link](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
+The Gamer Quiz is an interactive front-end web application in quiz format, based on video games.
+
+Visit the live site: [The Gamer Quiz](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
 
 # Table of contents
 
@@ -123,20 +123,90 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 - High scores page
 
-![High scores reframe](docs/wf-high-scores.png)
+![High scores wireframe](docs/wf-high-scores.png)
 
 ### Features
 
 #### Existing Features
 
-##### High scores page
-![High scores](docs/high-scores.png)
+This website has a home page, a game select page, 3 game pages (easy, medium, difficult), a high scores page, an end page a 404 error page.
+
+- **All pages have:**
+ - The Sites title.
+
+ ![Logo](docs/features/feature-logo.png)
+    - This redirects the user to the home page by clicking on the logo.
+    - The user can simply click on it to come back to the home page at any time, providing an easy user experience.
+
+
+ - A fav icon. 
+
+ ![Fav icon](docs/features/feature-fav-icon.png)
+
+    - This will allow the user to clearly identify the site when having open multiple tabs.
+    - Each page has a unique tittle that indicates this to the user for easier navigation.
+
+
+- Custom cursor.
+
+![Custom cursor](docs/features/feature-cursor-icon.gif)
+
+    - A custom cursor video game themed when hovering clickable items in the website.
+
+
+- **Home page:**
+
+![Home](docs/features/feature-home.png)
+
+    - The homepage introduces the user to the website.
+    - The user can select to read the instruction, start the quiz or see the high scores. 
+
+
+- **How to play:**
+
+![How to play](docs/features/feature-how-to-play.png)
+
+    - From the home page a modal will open if the user clicks on how to play.   
+    - This page gives instructions on how to take the quiz.
+
+
+- **Game select:**
+
+![Game select](docs/features/feature-game-select.png)
+
+    - If the user clicks on play, this page will open
+    - The user can select the level of difficulty for the quiz (easy, medium or hard).
+
+
+- **Game:**
+
+![Game](docs/features/feature-game.png)
+
+    - The selected game will open, giving the user the chosen question mode.
+
+
+- **End page:**
+
+![High scores](docs/features/feature-end.png)
+
+    - When finishing the quiz, the user will have the option to save the score obtained, play again or return to the home page.
+
+
+- **High scores:**
+
+![High scores](docs/features/feature-high-scores.png)
+
+    - This high scores page shows the most recent best scores (maximum 5).
+
 
 ### Features Left to Implement
 
 In the future, I would like to:
 
 - Add a multiplayer version to the game.
+- Store data in back-end.
+- Add music to the quiz.
+- Add a feature in which the player can select the amount of questions.
 
 ### Accessibility
 

@@ -2,7 +2,9 @@
 
 ![The Gamer Quiz](docs/project.png)
 
-[Live link](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
+The Gamer Quiz is an interactive front-end web application in quiz format, based on video games.
+
+Visit the live site: [The Gamer Quiz](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
 
 ## CONTENTS
 
