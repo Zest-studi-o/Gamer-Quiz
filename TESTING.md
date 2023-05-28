@@ -36,22 +36,23 @@ Automated testing was carried out at a later stage using validators and all erro
 #### Game select - Passed, no errors.
 ![index.html](docs/testing/w3/w3-select.png) 
 
-#### Game - .
-[game.html](docs/testing/w3/w3-game.png)
+#### Game - Errors and warnings.
+![game.html](docs/testing/w3/w3-game-easy.png)
 
-#### High Scores - .
-[high-scores.html](docs/testing/w3/w3-high-scores.png)
+#### High Scores - Passed, no errors.
+![high-scores.html](docs/testing/w3/w3-high-scores.png)
 
-#### End - .
-[end.html](docs/testing/w3/end.png)
+#### End - One warning "Empty heading".
+This heading is used to pull the data with JS. 
+![end.html](docs/testing/w3/end.png)
 
-#### 404 - .
-[404.html](docs/testing/w3/w3-404.png)
+#### 404 - Passed, no errors.
+![404.html](docs/testing/w3/w3-404.png)
 
 ### W3C Validator
 
 No errors were found when passing through the official (Jigsaw) validator.
-[Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+![Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
 
 #### Style - Passed, no errors.
 ![style.css](docs/testing/jigsaw/css.png)
@@ -59,6 +60,13 @@ No errors were found when passing through the official (Jigsaw) validator.
 - - -
 
 ### JavaScript Validator
+
+[jshint](https://jshint.com/) was used to validate the JavaScript.
+
+* [script.js](testing/jshint/jshint-script.png) - Passed. Warnings about availability in ES6 version.
+* [game.js](testing/jshint/jshint-game.png) - Passed. Warnings about availability in ES6 version and some undefined variables, however, those are being used.
+* [high-scores.js](testing/jshint/jshint-highscores.png) - Warnings about availability in ES8 version. 
+* [end.js](testing/jshint/jshint-highscores.png) - Passed. Warnings about availability in ES8 version.
 
 ### Lighthouse
 

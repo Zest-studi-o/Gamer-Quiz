@@ -70,7 +70,7 @@ Project goals:
 
 #### Frequent Visitor Goals
 - As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as possible to improve. 
-- As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank in the leaderboards.
+- As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank in the leader boards.
 
 ---
 
@@ -258,7 +258,7 @@ All questions were pulled from the following API:
 
 - [Freepik - text effect](https://www.freepik.com/free-vector/realistic-gamer-text-effect_33301158.htm#&position=6&from_view=collections)
 
-- [Freepik - glitch effect background](https://www.freepik.com/free-vector/glitch-background_3865410.html)
+- [Freepik - glitch effect background](https://www.freepik.com/free-vector/glitch-background_3865410.htm#&position=1&from_view=collections)
 
 - [Freepik - 404 vector](https://www.freepik.com/free-vector/glitch-error-404-page-background_3916183.htm#&position=0&from_view=collections)
 
