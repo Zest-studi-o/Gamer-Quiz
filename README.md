@@ -131,73 +131,85 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 This website has a home page, a game select page, 3 game pages (easy, medium, difficult), a high scores page, an end page a 404 error page.
 
-- **All pages have:**
- - The Sites title.
+**All pages have:**
+ 
+**The Sites title**
 
  ![Logo](docs/features/feature-logo.png)
-    - This redirects the user to the home page by clicking on the logo.
-    - The user can simply click on it to come back to the home page at any time, providing an easy user experience.
 
+  * This redirects the user to the home page by clicking on the logo.
+  * The user can simply click on it to come back to the home page at any time, providing an easy user experience.
+---
 
- - A fav icon. 
+**A fav icon**
 
  ![Fav icon](docs/features/feature-fav-icon.png)
 
-    - This will allow the user to clearly identify the site when having open multiple tabs.
-    - Each page has a unique tittle that indicates this to the user for easier navigation.
+  * This will allow the user to clearly identify the site when having open multiple tabs.
+  *  Each page has a unique tittle that indicates this to the user for easier navigation.
+---
 
-
-- Custom cursor.
+**Custom cursor**
 
 ![Custom cursor](docs/features/feature-cursor-icon.gif)
 
-    - A custom cursor video game themed when hovering clickable items in the website.
+  *  A custom cursor video game themed when hovering clickable items in the website.
+---
 
-
-- **Home page:**
+**Home page:**
 
 ![Home](docs/features/feature-home.png)
 
-    - The homepage introduces the user to the website.
-    - The user can select to read the instruction, start the quiz or see the high scores. 
+  * The homepage introduces the user to the website.
+  *  The user can select to read the instruction, start the quiz or see the high scores. 
+---
 
-
-- **How to play:**
+**How to play:**
 
 ![How to play](docs/features/feature-how-to-play.png)
 
-    - From the home page a modal will open if the user clicks on how to play.   
-    - This page gives instructions on how to take the quiz.
+  *  From the home page a modal will open if the user clicks on how to play.   
+  *  This page gives instructions on how to take the quiz.
+---
 
-
-- **Game select:**
+**Game select:**
 
 ![Game select](docs/features/feature-game-select.png)
 
-    - If the user clicks on play, this page will open
-    - The user can select the level of difficulty for the quiz (easy, medium or hard).
+  * If the user clicks on play, this page will open
+  * The user can select the level of difficulty for the quiz (easy, medium or hard).
+---
 
-
-- **Game:**
+**Game:**
 
 ![Game](docs/features/feature-game.png)
 
-    - The selected game will open, giving the user the chosen question mode.
+  * The selected game will open, giving the user the chosen question mode.
+---
 
-
-- **End page:**
+**End page:**
 
 ![High scores](docs/features/feature-end.png)
 
-    - When finishing the quiz, the user will have the option to save the score obtained, play again or return to the home page.
+  * When finishing the quiz, the user will have the option to save the 
+  score obtained, play again or return to the home page.
+---
 
-
-- **High scores:**
+**High scores:**
 
 ![High scores](docs/features/feature-high-scores.png)
 
-    - This high scores page shows the most recent best scores (maximum 5).
+  * This high scores page shows the most recent best scores (maximum 5).
 
+---
+
+**Error 404:**
+
+![404](docs/features/feature-404.png)
+
+  * This is a 404 error page that shows in case of an error fetching data from the api.
+
+---
 
 ### Features Left to Implement
 
