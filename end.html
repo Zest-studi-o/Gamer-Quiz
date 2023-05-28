@@ -30,30 +30,27 @@
       </a>
     </h1>
   </header>
-
-  <body>
-
-    <div class="outer-container">
-      <div id="end" class="buttons-container">
-        <div class="player-score">
-          <h2>
-            Score
-          </h2>
-          <h1 id="finalScore"></h1>
-        </div>
-
-        <form>
-          <input type="text" name="username" id="username" placeholder="username" />
-        </form>
-        <button type="submit" class="btn hover-button" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
-          Save
-        </button>
-
-        <a class="btn hover-button" href="game-select.html">Play Again</a>
-        <a class="btn hover-button" href="index.html">Go Home</a>
+  <div class="outer-container">
+    <div id="end" class="buttons-container">
+      <div class="player-score">
+        <h2>
+          Score
+        </h2>
+        <h1 id="finalScore"></h1>
       </div>
+
+      <form>
+        <input type="text" name="username" id="username" placeholder="username" />
+      </form>
+      <button type="submit" class="btn hover-button" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+        Save
+      </button>
+
+      <a class="btn hover-button" href="game-select.html">Play Again</a>
+      <a class="btn hover-button" href="index.html">Go Home</a>
     </div>
-    <script src="assets/js/end.js"></script>
-  </body>
+  </div>
+  <script src="assets/js/end.js"></script>
+</body>
 
 </html>

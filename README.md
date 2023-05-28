@@ -2,6 +2,8 @@
 
 What the site is about, mockup and live link.
 
+![The Gamer Quiz](docs/project.png)
+
 [Live link](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
 
 # Table of contents
@@ -80,10 +82,12 @@ The site colour palette is based on a technological theme so it could be associa
 ![Content](docs/colour-palette.png)
 
 ### Typography
-
+For the logo I have used a vector illustration that I customised and exported as png with transparent background.
+I picked a display font for the headings that is related to the quiz theme which is video games named Press Start 2P and then for body copy a readable sans serif, optimal for web design such as montserrat.
 The fonts were taken from Google Fonts:
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)
 
 ### Imagery
 
