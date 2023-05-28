@@ -441,6 +441,9 @@ input::placeholder {
 
 /* Medium-small screens */
 @media screen and (max-width: 550px) {
+    .main-background {
+    background: var(--oxford-blue);
+    }
   .logo {
     height: 1.7em;
   }
