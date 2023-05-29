@@ -9,6 +9,7 @@ const scoreText = document.getElementById("score");
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 
+
 // Default Variables
 let currentQuestion = {};
 let acceptingAnswers = false; //the user can not answer before it is ready
@@ -91,9 +92,10 @@ function startGame() {
   score = 0;
   availableQuesions = [...questions];
   getNewQuestion();
-  //To show and hide the loader
-  game.classList.remove('hidden');
-  loader.classList.add('hidden');
+
+  //To show and hide the loader or the game
+  play.classList.remove('hidden'); //shows the game
+  loader.classList.add('hidden'); //removes the loader
 }
 
 /**

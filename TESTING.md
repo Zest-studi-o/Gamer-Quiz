@@ -38,8 +38,14 @@ Automated testing was carried out at a later stage using validators and all erro
 #### Game select - Passed, no errors.
 ![index.html](docs/testing/w3c/w3c-select.png) 
 
-#### Game - Errors and warnings.
-![game.html](docs/testing/w3c/w3c-game-easy.png)
+#### Game easy - Passed, no errors.
+![game-easy.html](docs/testing/w3c/w3c-game-easy.png)
+
+#### Game medium - Passed, no errors.
+![game-medium.html](docs/testing/w3c/w3c-game-medium.png)
+
+#### Game hard - Passed, no errors.
+![game-hard.html](docs/testing/w3c/w3c-game-hard.png)
 
 #### High Scores - Passed, no errors.
 ![high-scores.html](docs/testing/w3c/w3c-high-scores.png)
@@ -92,16 +98,16 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 #### Desktop Results
 
 ![Home Page](docs/testing/lighthouse/lh-home-desktop.png)
-![Game Page](docs/testing/lighthouse/lh-home-desktop.png)
-![High scores pages](docs/testing/lighthouse/lh-high-scores-desktop.png)
+![Game Pages](docs/testing/lighthouse/lh-home-desktop.png)
+![High scores page](docs/testing/lighthouse/lh-high-scores-desktop.png)
 ![End Page](docs/testing/lighthouse/lh-end-desktop.png)
 ![404](docs/testing/lighthouse/lh-404-desktop.png)
 
 #### Mobile Results
 
 ![Home Page](docs/testing/lighthouse/lh-home-mobile.png)
-![Game Page](docs/testing/lighthouse/lh-home-mobile.png)
-![High scores pages](docs/testing/lighthouse/lh-high-scores-mobile.png)
+![Game Pages](docs/testing/lighthouse/lh-home-mobile.png)
+![High scores page](docs/testing/lighthouse/lh-high-scores-mobile.png)
 ![End Page](docs/testing/lighthouse/lh-end-mobile.png)
 ![404](docs/testing/lighthouse/lh-404-mobile.png)
 ---
