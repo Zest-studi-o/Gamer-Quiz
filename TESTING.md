@@ -46,7 +46,7 @@ Automated testing was carried out at a later stage using validators and all erro
 
 #### End - One warning "Empty heading".
 This heading is used to pull the data with JS. 
-![end.html](docs/testing/w3/end.png)
+![end.html](docs/testing/w3/w3-end.png)
 
 #### 404 - Passed, no errors.
 ![404.html](docs/testing/w3/w3-404.png)
@@ -61,14 +61,14 @@ No errors were found when passing through the official (Jigsaw) validator.
 
 - - -
 
-### JavaScript Validator
+### JavaScript Validator (to complete again and add screenshots)
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
 * [script.js](testing/jshint/jshint-script.png) - Passed. Warnings about availability in ES6 version.
 * [game.js](testing/jshint/jshint-game.png) - Passed. Warnings about availability in ES6 version and some undefined variables, however, those are being used.
-* [high-scores.js](testing/jshint/jshint-highscores.png) - Warnings about availability in ES8 version. 
-* [end.js](testing/jshint/jshint-highscores.png) - Passed. Warnings about availability in ES8 version.
+* [high-scores.js](testing/jshint/jshint-highscores.png) - Passed. Warnings about availability in ES6 version. 
+* [end.js](testing/jshint/jshint-highscores.png) - Passed. Warnings about availability in ES6 version.
 
 ### Lighthouse
 
@@ -100,20 +100,20 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 `First-Time Visitors`
 | Goals | How are they achieved? |
 | :--- | :--- |
-| As a first-time visitor, I want to take part in a gaming quiz so that I can test my knowledge about video games. | How I meet the goal |
-| As a first-time visitor, I want to play the quiz in different devices so that I can use all my devices at my convenience. | How I meet the goal |
-| As a first-time visitor, I want to navigate easily the site so that I can understand quickly the game mechanics. | How I meet the goal |
+| As a first-time visitor, I want to take part in a gaming quiz so that I can test my knowledge about video games. | The quiz questions are pulled from an API which offer a varied range of questions |
+| As a first-time visitor, I want to play the quiz in different devices so that I can use all my devices at my convenience. | The game is fully responsive and can be played in any screen size |
+| As a first-time visitor, I want to navigate easily the site so that I can understand quickly the game mechanics. | The game is easy to understand and further instructions are provided in how to play |
 
 `Returning Visitors`
 | Goals | How are they achieved? |
 | :--- | :--- |
-| As a returning visitor, I want to select the level of difficulty so that I can play in different modes and test further my knowledge | How I meet the goal |
+| As a returning visitor, I want to select the level of difficulty so that I can play in different modes and test further my knowledge | There is a feature which enables the user to select this once hitting play |
 
 `Frequent Visitors`
 | Goals | How are they achieved? |
 | :--- | :--- |
-| As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as possible to improve. | How I meet the goal |
-| As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank in the leader boards. | How I meet the goal |
+| As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as possible to improve. | The game select feature enables the user to select more challenging questions as they progress in knowledge |
+| As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank in the leader boards. | The game has a feature which enables to load scores and see the top 5 ranking |
 
 ### Full Testing
 Full testing was performed on the following devices:

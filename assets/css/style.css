@@ -342,7 +342,7 @@ input::placeholder {
   color: #ffffff;
 }
 
-#highScoresList {
+#high-score-list {
   list-style: none;
   padding-left: 0;
   margin-bottom: 4rem;
