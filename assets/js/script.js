@@ -3,11 +3,19 @@ const closeModal = document.getElementById("close-modal");
 const modalContainer = document.getElementById("modal-container");
 
 // Open Modal
-openModal.addEventListener("click", () => {
-  modalContainer.classList.add("show");
-});
+modalOpen();
 
 // Close Modal
-closeModal.addEventListener("click", () => {
-  modalContainer.classList.remove("show");
-});
+modalClosed();
+
+function modalOpen() {
+  openModal.addEventListener("click", () => {
+    modalContainer.classList.add("show");
+  });
+}
+
+function modalClosed() {
+  closeModal.addEventListener("click", () => {
+    modalContainer.classList.remove("show");
+  });
+}

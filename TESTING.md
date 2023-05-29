@@ -65,10 +65,21 @@ No errors were found when passing through the official (Jigsaw) validator.
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-* [script.js](testing/jshint/jshint-script.png) - Passed. Warnings about availability in ES6 version.
-* [game.js](testing/jshint/jshint-game.png) - Passed. Warnings about availability in ES6 version and some undefined variables, however, those are being used.
-* [high-scores.js](testing/jshint/jshint-highscores.png) - Passed. Warnings about availability in ES6 version. 
-* [end.js](testing/jshint/jshint-highscores.png) - Passed. Warnings about availability in ES6 version.
+#### Script - Passed.
+No errors found.
+![script.js](docs/testing/jshint/jshint-script.png)
+
+#### Game - Passed.
+No errors found. 
+Warnings about three undefined variables, however, those are being used.
+![game.js](docs/testing/jshint/jshint-game.png) 
+
+#### High scores - Passed. 
+![high-scores.js](docs/testing/jshint/jshint-highscores.png)
+
+#### End - Passed. 
+![end.js](docs/testing/jshint/jshint-highscores.png) - Passed.
+
 
 ### Lighthouse
 

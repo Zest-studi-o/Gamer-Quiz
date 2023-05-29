@@ -42,7 +42,7 @@ function setGameLevel() {
   }
 }
 
- /**
+/**
  * Loads the questions
  * Get quesions from opentdb
  */
@@ -94,7 +94,7 @@ function startGame() {
   //To show and hide the loader
   game.classList.remove('hidden');
   loader.classList.add('hidden');
-};
+}
 
 /**
  * This function gets New Questions based on the lenght of the array
@@ -102,12 +102,12 @@ function startGame() {
  * Questions and choices are populated
  */
 getNewQuestion = () => {
-  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {//if there are no questions left in the array or question counter gets to max
+  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) { //if there are no questions left in the array or question counter gets to max
     //go to the end html page
     return window.location.assign("./end.html");
   }
   questionCounter++;
-  questionCounterText.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;  //Scoreboard - question counter
+  questionCounterText.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`; //Scoreboard - question counter
   localStorage.setItem("mostRecentScore", score); //Stores scores
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -115,7 +115,7 @@ getNewQuestion = () => {
   question.innerHTML = currentQuestion.question;
 
   choices.forEach(choice => {
-    const number = choice.dataset["number"];
+    const number = choice.dataset.number;
     choice.innerHTML = currentQuestion["choice" + number];
   });
 
@@ -127,34 +127,34 @@ getNewQuestion = () => {
  * Fetch the choices as the user clicks
  * allows to select and answer
  */
- choices.forEach(choice => {
-    choice.addEventListener("click", e => {
-      if (!acceptingAnswers) return;
-  
-      acceptingAnswers = false;
-      const selectedChoice = e.target;
-      const selectedAnswer = selectedChoice.dataset["number"];
-  
-      const classToApply =
+choices.forEach(choice => {
+  choice.addEventListener("click", e => {
+    if (!acceptingAnswers) return;
+
+    acceptingAnswers = false;
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset.number;
+
+    const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
 
-      //Adds correct answer bonus
-      if (classToApply === "correct") {
-        incrementScore(CORRECT_BONUS);
-      }
-  
-      selectedChoice.parentElement.classList.add(classToApply); //the selected choice grabs the parent element and get the class to apply
-  
-      //Delays the question to control the time in showing the feedback colour
-      setTimeout(() => {
-        selectedChoice.parentElement.classList.remove(classToApply);
-        getNewQuestion();
-      }, 1000);
-    });
+    //Adds correct answer bonus
+    if (classToApply === "correct") {
+      incrementScore(CORRECT_BONUS);
+    }
+
+    selectedChoice.parentElement.classList.add(classToApply); //the selected choice grabs the parent element and get the class to apply
+
+    //Delays the question to control the time in showing the feedback colour
+    setTimeout(() => {
+      selectedChoice.parentElement.classList.remove(classToApply);
+      getNewQuestion();
+    }, 1000);
   });
+});
 
 //Score counter
-  incrementScore = num => {
-    score += num;
-    scoreText.innerHTML = score;
-  };
+incrementScore = num => {
+  score += num;
+  scoreText.innerHTML = score;
+};
