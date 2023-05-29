@@ -37,50 +37,50 @@
     <div id="loader"></div>
 
     <!-- Here the Scoreboard-->
-    <div class="container">
-      <div id="game" class="hidden">
-        <div id="scoreboard">
-          <div id="scoreboard-item">
-            <p class="scoreboard-prefix">
-              Question
-            </p>
-            <h1 class="scoreboard-main-text" id="question-counter"></h1>
-          </div>
-          <div id="scoreboard-item">
-            <p class="scoreboard-prefix">
-              Score
-            </p>
-            <h1 class="scoreboard-main-text" id="score">
-              0
-            </h1>
-          </div>
+    <div id="game" class="hidden">
+      <div id="scoreboard">
+        <div class="scoreboard-item">
+          <p class="scoreboard-prefix">
+            Question
+          </p>
+          <h1 class="scoreboard-main-text" id="question-counter">Q</h1>
         </div>
-
-        <!-- Here the QUIZ questions-->
-        <!-- group the buttons-->
-        <div id="game" class="buttons-container">
-          <h2 id="question"></h2>
-          <div class="choice-container btn hover-button">
-            <p class="choice-prefix">A</p>
-            <p class="choice-text" data-number="1"></p>
-          </div>
-          <div class="choice-container btn">
-            <p class="choice-prefix">B</p>
-            <p class="choice-text" data-number="2"></p>
-          </div>
-          <div class="choice-container btn">
-            <p class="choice-prefix">C</p>
-            <p class="choice-text" data-number="3"></p>
-          </div>
-          <div class="choice-container btn">
-            <p class="choice-prefix">D</p>
-            <p class="choice-text" data-number="4"></p>
-          </div>
+        <div class="scoreboard-item">
+          <p class="scoreboard-prefix">
+            Score
+          </p>
+          <h1 class="scoreboard-main-text" id="score">
+            0
+          </h1>
         </div>
       </div>
-</body>
 
-<!--JavaScript-->
-<script src="assets/js/game.js"></script>
+      <!-- Here the QUIZ questions-->
+      <!-- group the buttons-->
+      <div id="game" class="buttons-container">
+        <h2 id="question">Question: </h2>
+        <div class="choice-container btn hover-button">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1"></p>
+        </div>
+        <div class="choice-container btn">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2"></p>
+        </div>
+        <div class="choice-container btn">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3"></p>
+        </div>
+        <div class="choice-container btn">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text" data-number="4"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--JavaScript-->
+  <script src="assets/js/game.js"></script>
+</body>
 
 </html>

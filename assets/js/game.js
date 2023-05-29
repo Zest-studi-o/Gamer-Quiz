@@ -44,7 +44,7 @@ function setGameLevel() {
 
 /**
  * Loads the questions
- * Get quesions from opentdb
+ * Get questions from opentdb
  */
 function fetchQuestionsFromAPI() {
   fetch(url)
@@ -97,8 +97,8 @@ function startGame() {
 }
 
 /**
- * This function gets New Questions based on the lenght of the array
- * Grabs the choice property and get data attribute number to get the appropiate question
+ * This function gets New Questions based on the length of the array
+ * Grabs the choice property and get data attribute number to get the appropriate question
  * Questions and choices are populated
  */
 getNewQuestion = () => {
