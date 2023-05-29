@@ -75,10 +75,14 @@ Warnings about three undefined variables, however, those are being used.
 ![game.js](docs/testing/jshint/jshint-game.png) 
 
 #### High scores - Passed. 
-![high-scores.js](docs/testing/jshint/jshint-highscores.png)
+No errors found. 
+A warning about an undefined variable, however, this is being used.
+![high-scores.js](docs/testing/jshint/jshint-high-scores.png)
 
 #### End - Passed. 
-![end.js](docs/testing/jshint/jshint-highscores.png) - Passed.
+No errors found. 
+A warning about an undefined variable and an unused variable however, those are being used.
+![end.js](docs/testing/jshint/jshint-end.png)
 
 
 ### Lighthouse
