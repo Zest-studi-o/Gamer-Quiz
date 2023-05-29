@@ -161,7 +161,7 @@ This website has a home page, a game select page, 3 game pages (easy, medium, di
 ![Home](docs/features/feature-home.png)
 
   * The homepage introduces the user to the website.
-  *  The user can select to read the instruction, start the quiz or see the high scores. 
+  * The user can select to read the instruction, start the quiz or see the high scores. 
 ---
 
 **How to play:**
@@ -329,7 +329,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 - [Build a Quiz App - James Q Quick](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=1) I used this series of videos to teach me how to make a quiz app using html, css and js.
 This tutorial builds up on the Code Institute content, teaching how to develop and add features to a QUIZ app, such as a highscores page or save user data to local storage, the tutorial goes further and also explain how to fetch data from an API to display the questions.
 
-- I also used [stack overflow](https://stackoverflow.com/) to troubleshot errors, [w3schools] (https://www.w3schools.com/) and [mdn developer](https://developer.mozilla.org/es/) to read documentation and learn about specific things such as how to fetch
+- I also used [stack overflow](https://stackoverflow.com/) to troubleshot errors, [w3schools](https://www.w3schools.com/) and [mdn developer](https://developer.mozilla.org/es/) to read documentation and learn about specific things such as how to fetch.
 
 ### Content
 

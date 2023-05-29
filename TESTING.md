@@ -33,23 +33,23 @@ Automated testing was carried out at a later stage using validators and all erro
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
 #### Home - Passed, no errors.
-![index.html](docs/testing/w3/w3-home.png) 
+![index.html](docs/testing/w3c/w3c-home.png) 
 
 #### Game select - Passed, no errors.
-![index.html](docs/testing/w3/w3-select.png) 
+![index.html](docs/testing/w3c/w3c-select.png) 
 
 #### Game - Errors and warnings.
-![game.html](docs/testing/w3/w3-game-easy.png)
+![game.html](docs/testing/w3c/w3c-game-easy.png)
 
 #### High Scores - Passed, no errors.
-![high-scores.html](docs/testing/w3/w3-high-scores.png)
+![high-scores.html](docs/testing/w3c/w3c-high-scores.png)
 
 #### End - One warning "Empty heading".
 This heading is used to pull the data with JS. 
-![end.html](docs/testing/w3/w3-end.png)
+![end.html](docs/testing/w3c/w3c-end.png)
 
 #### 404 - Passed, no errors.
-![404.html](docs/testing/w3/w3-404.png)
+![404.html](docs/testing/w3c/w3c-404.png)
 
 ### W3C Validator
 
@@ -152,6 +152,35 @@ Each device tested the site using the following browsers:
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | The Sites title | Clicking on the logo link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Fav icon | abc | abc | abc | Pass |
+| Custom cursor | abc | abc | abc | Pass |
+
+`Home page`
+| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Buttons | abc | abc | abc | Pass |
+
+`Game select page`
+| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Buttons | abc | abc | abc | Pass |
+
+`Game pages`
+| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Buttons | abc | abc | abc | Pass |
+
+`End page`
+| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Buttons | abc | abc | abc | Pass |
+
+`High scores page`
+| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Buttons | abc | abc | abc | Pass |
+
+---
 
 ## BUG TRACKER
 
