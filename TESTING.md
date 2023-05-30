@@ -50,7 +50,7 @@ Automated testing was carried out at a later stage using validators and all erro
 #### High Scores - Passed, no errors.
 ![high-scores.html](docs/testing/w3c/w3c-high-scores.png)
 
-#### End - One warning "Empty heading".
+#### End - Passed, no errors.
 This heading is used to pull the data with JS. 
 ![end.html](docs/testing/w3c/w3c-end.png)
 
@@ -59,8 +59,8 @@ This heading is used to pull the data with JS.
 
 ### W3C Validator
 
-No errors were found when passing through the official (Jigsaw) validator.
-![Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+No errors were found when passing through the official
+[Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
 
 #### Style - Passed, no errors.
 ![style.css](docs/testing/jigsaw/css.png)
@@ -77,17 +77,17 @@ No errors found.
 
 #### Game - Passed.
 No errors found. 
-Warnings about three undefined variables, however, those are being used.
+Warnings about three undefined variables, however, those are being defined.
 ![game.js](docs/testing/jshint/jshint-game.png) 
 
 #### High scores - Passed. 
 No errors found. 
-A warning about an undefined variable, however, this is being used.
+A warning about an undefined variable, however, this is being defined.
 ![high-scores.js](docs/testing/jshint/jshint-high-scores.png)
 
 #### End - Passed. 
 No errors found. 
-A warning about an undefined variable and an unused variable however, those are being used.
+A warning about an undefined variable and an unused variable however, those are being defined and used.
 ![end.js](docs/testing/jshint/jshint-end.png)
 
 
@@ -157,35 +157,47 @@ Each device tested the site using the following browsers:
 `All pages`
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| The Sites title | Clicking on the logo link directs the user back to the home page | Clicked title | Home page reloads | Pass |
-| Fav icon | abc | abc | abc | Pass |
-| Custom cursor | abc | abc | abc | Pass |
+| The Sites title | Clicking on the logo link directs the user back to the home page | Clicked title | Home page loads | Pass |
+| Fav icon | The fav icon shows when visiting the page | Visited page | The fav icon correctly displays | Pass |
+| Custom cursor | The gamepad cursor displays when hovering over clickable content | Hover over buttons and logo | The gamepad cursor displays | Pass |
+| Hover button effect | The buttons change color when hovering over| Hover over the buttons | The colour changes as expected when the mouse is on the buttons | Pass |
 
 `Home page`
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Buttons | abc | abc | abc | Pass |
+| How to play modal | The modal open and closes correctly| Click on how to play, click on close | The content is shown and hidden as expected | Pass |
+| Play | The play button directs the user to the game select page | Click on the play button | The game select page loads | Pass |
+| High scores | The high scores button directs the user to the game high scores page | Click on the high scores button | The high scores page loads | Pass |
 
 `Game select page`
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Buttons | abc | abc | abc | Pass |
+| Easy Quiz | The easy button directs the user to the easy quiz, questions from video game category, easy are loaded from the API | Click on the easy button | The easy quiz page loads pulling easy questions from the API | Pass |
+| Medium Quiz | The medium button directs the user to the easy quiz, questions from video game category, medium are loaded from the API | Click on the medium button | The medium quiz page loads pulling medium questions from the API | Pass |
+| Hard Quiz | The hard button directs the user to the hard quiz, questions from video game category, hard are loaded from the API | Click on the hard button | The hard quiz page loads pulling hard questions from the API | Pass |
 
 `Game pages`
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Buttons | abc | abc | abc | Pass |
+| Loader | A loader shows while the questions are being populated | Click on any game difficulty | The loader shows while waiting for the questions | Pass |
+| Question counter | The current question and total of questions shows on top | Play any game | The question counter is showing correctly | Pass |
+| Score board | The current score shows on top of the questions | Play any game | The questions score is showing correctly | Pass |
+| Colour user feedback | The selected question takes the colour green if it is correct or red if it is incorrect | Play any game | The questions colours display correctly | Pass |
 
 `End page`
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Buttons | abc | abc | abc | Pass |
+| Game score | The score obtained in the game displays on top | Play any game and reach the end page | The correct score displays | Pass |
+| Enter username | The user can enter their username | Play any game, reach the end page and enter a username | The username is correctly entered | Pass |
+| Save results | The button save results allows to save a user name and the quiz obtained results, if no username if entered this prevents the user from saving an empty username | Play any game, reach the end page and enter a username, try to save without entering a user name | The feature works as expected | Pass |
+| Play again | The play again button directs the user to the game selection page | Click on the play again button | The game select page loads | Pass |
+| Go home | The go home button directs the user to the home page | Click on the go home button | The home page loads | Pass |
 
 `High scores page`
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Buttons | abc | abc | abc | Pass |
-
+| Results list | The list shows the top 5 highest scores | Play any game, reach the end of the page, save scores more than 5 times | The top 5 scores are shown | Pass |
+| Go home | The go home button directs the user to the home page | Click on the go home button | The home page loads | Pass |
 ---
 
 ## BUG TRACKER

@@ -128,7 +128,7 @@ Flex container*/
 
 /* Outer Container */
 .outer-container {
-  width: 80%;
+  width: 60%;
   margin: auto;
   color: var(--baby-white);
   border-radius: 1.5rem;
@@ -394,7 +394,7 @@ input::placeholder {
   }
 
   .outer-container {
-    width: 90%;
+    width: 80%;
   }
 
   .scoreboard-prefix {
@@ -485,7 +485,7 @@ input::placeholder {
   }
 
   .outer-container {
-    width: 65%;
+    width: 90%;
   }
 
   .btn-width {
