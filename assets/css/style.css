@@ -290,7 +290,7 @@ input::placeholder {
 }
 
 .player-score,
-#finalScore {
+#final-score {
   font-family: var(--display-text);
 }
 
@@ -352,7 +352,7 @@ input::placeholder {
   padding: 2em;
 }
 
-#finalScore {
+#final-score {
   padding: 0.5em;
 }
 
@@ -498,7 +498,7 @@ input::placeholder {
 
   .intro-text>h2,
   #modal-content>h2,
-  #finalScore {
+  #final-score {
     padding: .5em 0em .7em;
     line-height: 160%;
     font-size: 1.2em;
@@ -539,7 +539,7 @@ input::placeholder {
     margin: 0.5rem;
   }
 
-  #finalScore {
+  #final-score {
     font-size: 1.2em;
   }
 }
