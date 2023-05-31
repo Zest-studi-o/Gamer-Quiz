@@ -93,6 +93,7 @@ p {
   text-align: center;
   font-size: 1rem;
   padding: 0.5em 2em;
+  line-height: 1.6em;
 }
 
 a {
@@ -165,6 +166,10 @@ Flex container*/
   margin: 0.5rem;
 }
 
+.end-btns {
+  width: 60%;
+}
+
 .hover-button:hover,
 .choice-container:hover {
   box-shadow: -2px -2px 5px rgba(86, 185, 235, 0.5) inset;
@@ -217,6 +222,7 @@ input {
   font-size: 1.8rem;
   border: none;
   box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  border-radius: 15px;
 }
 
 input::placeholder {
@@ -366,6 +372,31 @@ input::placeholder {
 }
 
 /*---------- MEDIA QUERIES ----------*/
+@media screen and (max-width: 1400px) {
+  .intro-text {
+    font-size: 80%;
+    width: 90%;
+  }
+
+  .btn-container {
+    width: 90%;
+  }
+
+  .btn-width {
+    width: 80%;
+  }
+
+  .btn {
+
+    font-size: 90%;
+  }
+
+  .heading {
+    margin-top: 3em;
+  }
+
+}
+
 @media screen and (max-width: 1100px) {
   .main-background {
     background: url("../images/bg-365x747px.png") no-repeat center center;
@@ -387,10 +418,7 @@ input::placeholder {
 
   .intro-text>h2 {
     padding: .8em 0em 1em;
-  }
-
-  .heading {
-    margin-top: 0.5em;
+    line-height: 1.5;
   }
 
   .outer-container {
@@ -404,11 +432,23 @@ input::placeholder {
   .scoreboard-main-text {
     font-size: 1.5em;
   }
+
+  .end-btns {
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   .error-page-container {
     padding-top: 15%;
+  }
+
+  .intro-text {
+    width: 80%;
+  }
+
+  input {
+    width: 90%;
   }
 }
 
@@ -428,6 +468,18 @@ input::placeholder {
 
   #highScores {
     padding-top: 1em;
+  }
+
+  .btn-container {
+    width: 80%;
+  }
+
+  .btn-width {
+    width: 70%;
+  }
+
+  .intro-text {
+    font-size: 70%;
   }
 }
 
