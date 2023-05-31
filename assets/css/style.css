@@ -48,27 +48,6 @@ body {
   background-size: cover;
 }
 
-/*---------- 404 PAGE ----------*/
-.background-error {
-  background: url("../images/404-bg.png") no-repeat center center;
-  background-color: var(--oxford-blue);
-  background-size: cover;
-}
-
-.error {
-  text-align: center;
-  width: 50%;
-  height: auto;
-  max-width: 100%;
-  justify-items: center;
-}
-
-.outer-container>h1 {
-  font-family: var(--display-text);
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
 /*---------- LOGO SECTION ----------*/
 .heading {
   text-align: center;
@@ -115,6 +94,10 @@ a {
   padding: 2em 2em;
 }
 
+#select-heading {
+  font-family: var(--display-text);
+  line-height: 1.5em;
+}
 
 /*---------- CONTAINERS ----------*/
 /* 
@@ -371,11 +354,37 @@ input::placeholder {
   transform: scale(1.025);
 }
 
+/*---------- 404 PAGE ----------*/
+.background-error {
+  background: url("../images/404-bg.png") no-repeat center center;
+  background-color: var(--oxford-blue);
+  background-size: cover;
+}
+
+.error {
+  text-align: center;
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+  justify-items: center;
+}
+
+.outer-container>h1 {
+  font-family: var(--display-text);
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
 /*---------- MEDIA QUERIES ----------*/
 @media screen and (max-width: 1400px) {
+
   .intro-text {
     font-size: 80%;
     width: 90%;
+  }
+
+  #select-heading {
+    font-size: 120%;
   }
 
   .btn-container {
@@ -387,14 +396,19 @@ input::placeholder {
   }
 
   .btn {
-
-    font-size: 90%;
+    font-size: 120%;
   }
 
   .heading {
-    margin-top: 3em;
+    margin-top: 2em;
   }
+}
 
+@media screen and (max-width: 1200px) {}
+
+.intro-text {
+  font-size: 75%;
+  width: 90%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -407,9 +421,12 @@ input::placeholder {
     padding-top: 2em;
   }
 
+  .btn-container {
+    width: 80%;
+  }
+
   #question {
     padding: 1em 1em;
-    font-size: 1.4em;
   }
 
   .logo {
@@ -444,11 +461,17 @@ input::placeholder {
   }
 
   .intro-text {
-    width: 80%;
+    width: 90%;
   }
 
   input {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .intro-text {
+    width: 80%;
   }
 }
 
@@ -479,7 +502,11 @@ input::placeholder {
   }
 
   .intro-text {
-    font-size: 70%;
+    font-size: 90%;
+  }
+
+  input {
+    font-size: 90%;
   }
 }
 
@@ -497,8 +524,17 @@ input::placeholder {
     line-height: 160%;
   }
 
-  .btn {
-    font-size: 1rem;
+  p {
+    font-size: 95%;
+  }
+
+  .heading {
+    margin-top: 1em;
+  }
+
+  #select-heading {
+    font-size: 110%;
+
   }
 }
 
