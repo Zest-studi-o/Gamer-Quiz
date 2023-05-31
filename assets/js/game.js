@@ -7,7 +7,7 @@ const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score");
 //Loader
 const loader = document.getElementById('loader');
-const game = document.getElementById('game');
+const play = document.getElementById('play');
 
 
 // Default Variables
@@ -16,6 +16,7 @@ let acceptingAnswers = false; //the user can not answer before it is ready
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
+let url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple';
 
 //Fetch questions from API
 let questions = [];
@@ -103,7 +104,8 @@ function startGame() {
  * Grabs the choice property and get data attribute number to get the appropriate question
  * Questions and choices are populated
  */
-getNewQuestion = () => {
+function getNewQuestion() {
+
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) { //if there are no questions left in the array or question counter gets to max
     //go to the end html page
     return window.location.assign("./end.html");
@@ -123,7 +125,7 @@ getNewQuestion = () => {
 
   availableQuesions.splice(questionIndex, 1); //the questions are not repeated
   acceptingAnswers = true; //allow user to answer
-};
+}
 
 /**
  * Fetch the choices as the user clicks
@@ -131,19 +133,19 @@ getNewQuestion = () => {
  */
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
-    if (!acceptingAnswers) return;
-
-    acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset.number;
 
-    const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
+    const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
 
     //Adds correct answer bonus
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
     }
+
+    if (!acceptingAnswers) return;
+
+    acceptingAnswers = false;
 
     selectedChoice.parentElement.classList.add(classToApply); //the selected choice grabs the parent element and get the class to apply
 
@@ -156,7 +158,7 @@ choices.forEach(choice => {
 });
 
 //Score counter
-incrementScore = num => {
+function incrementScore(num) {
   score += num;
   scoreText.innerHTML = score;
-};
+}

@@ -321,7 +321,7 @@ input::placeholder {
 }
 
 /*---------- HIGH SCORES ----------*/
-#highScores {
+#high-scores {
   padding-top: 6em;
 }
 
@@ -417,7 +417,7 @@ input::placeholder {
     background-size: cover;
   }
 
-  #highScores {
+  #high-scores-button {
     padding-top: 2em;
   }
 
@@ -489,7 +489,7 @@ input::placeholder {
     line-height: 1.5em;
   }
 
-  #highScores {
+  #high-scores-button {
     padding-top: 1em;
   }
 
@@ -618,7 +618,7 @@ input::placeholder {
     height: 1.3em
   }
 
-  #highScores {
+  #high-scores-button {
     padding-top: 4.5em;
   }
 
