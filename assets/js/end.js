@@ -9,7 +9,6 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 //Shows 5 recent scores maximum
 const MAX_HIGH_SCORES = 5;
 
-
 getScores();
 
 function getScores() {
@@ -19,6 +18,10 @@ function getScores() {
         saveScoreBtn.disabled = !username.value;
     });
 
+    newFunction();
+}
+
+function newFunction() {
     saveHighScore = (e) => {
         e.preventDefault();
 
