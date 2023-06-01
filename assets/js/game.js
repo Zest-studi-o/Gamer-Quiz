@@ -46,7 +46,7 @@
 
   /**
    * Loads the questions
-   * Get questions from opentdb
+   * Get questions from opendb
    */
   function fetchQuestionsFromAPI() {
     fetch(url)
@@ -148,7 +148,12 @@
 
       acceptingAnswers = false;
 
-      //the selected choice grabs the parent element and get the class to apply
+      /**
+       * The question the user selects grabs the parent element
+       * which is the whole container and gets the class to apply
+       * that is red for wrong and green for right answers
+       */
+
       selectedChoice.parentElement.classList.add(classToApply);
 
       //Delays the question to control the time in showing the feedback colour

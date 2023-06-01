@@ -207,7 +207,7 @@ Each device tested the site using the following browsers:
 | Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Error page | The page shows when there is an issue fetching data from the API | Break the game | The 404 page shows | Pass |
-| Try Again | The go try again button directs the user to the home page | Click on the go home button | The home page loads | Pass |
+| Try Again | The try again button directs the user to the home page | Click on the go home button | The home page loads | Pass |
 ---
 
 ## BUG TRACKER
