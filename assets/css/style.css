@@ -417,10 +417,6 @@ input::placeholder {
     background-size: cover;
   }
 
-  #high-scores-button {
-    padding-top: 2em;
-  }
-
   .btn-container {
     width: 80%;
   }
@@ -489,10 +485,6 @@ input::placeholder {
     line-height: 1.5em;
   }
 
-  #high-scores-button {
-    padding-top: 1em;
-  }
-
   .btn-container {
     width: 80%;
   }
@@ -534,7 +526,6 @@ input::placeholder {
 
   #select-heading {
     font-size: 110%;
-
   }
 }
 
@@ -618,10 +609,6 @@ input::placeholder {
     height: 1.3em
   }
 
-  #high-scores-button {
-    padding-top: 4.5em;
-  }
-
   .high-score {
     font-size: 1.3rem;
     margin: 0.5rem;
@@ -629,5 +616,26 @@ input::placeholder {
 
   #final-score {
     font-size: 1.2em;
+  }
+
+  #modal-content {
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+  }
+
+  .intro-text>p {
+    padding: 0.3em 0em 0.8em;
+    line-height: 160%;
   }
 }
