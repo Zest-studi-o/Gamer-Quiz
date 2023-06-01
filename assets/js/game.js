@@ -16,7 +16,7 @@
   let score = 0;
   let questionCounter = 0;
   let availableQuesions = [];
-  let url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple';
+  let url = 'https://opentdb.com';
 
   //Fetch questions from API
   let questions = [];
@@ -158,11 +158,10 @@
   });
 
   /**
-  //Score counter
-This function increments the score
-and it stores it in the local storage
+  * Score counter
+* This function increments the score
+* and it stores it in the local storage
   } */
-  //Score counter
   function incrementScore(num) {
     score += num;
     scoreText.innerHTML = score;

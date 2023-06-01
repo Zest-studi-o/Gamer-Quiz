@@ -6,6 +6,13 @@ The Gamer Quiz is an interactive front-end web application in quiz format, based
 
 Visit the live site: [The Gamer Quiz](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
 
+![GitHub contributors](https://img.shields.io/github/contributors/Zest-studi-o/P02-The-Gamer-Quiz?color=green)
+![GitHub last commit](https://img.shields.io/github/last-commit/Zest-studi-o/P02-The-Gamer-Quiz?color=purple)
+![W3C validated](https://img.shields.io/badge/W3C-validated-brightgreen)
+![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fzest-studi-o.github.io%2FP02-The-Gamer-Quiz%2F)
+![GitHub language count](https://img.shields.io/github/languages/count/Zest-studi-o/P02-The-Gamer-Quiz)
+![GitHub top language](https://img.shields.io/github/languages/top/Zest-studi-o/P02-The-Gamer-Quiz)
+
 # Table of contents
 
 - [User Experience (UX)](#User-Experience-UX)

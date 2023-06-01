@@ -6,6 +6,13 @@ The Gamer Quiz is an interactive front-end web application in quiz format, based
 
 Visit the live site: [The Gamer Quiz](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
 
+![GitHub contributors](https://img.shields.io/github/contributors/Zest-studi-o/P02-The-Gamer-Quiz?color=green)
+![GitHub last commit](https://img.shields.io/github/last-commit/Zest-studi-o/P02-The-Gamer-Quiz?color=purple)
+![W3C validated](https://img.shields.io/badge/W3C-validated-brightgreen)
+![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fzest-studi-o.github.io%2FP02-The-Gamer-Quiz%2F)
+![GitHub language count](https://img.shields.io/github/languages/count/Zest-studi-o/P02-The-Gamer-Quiz)
+![GitHub top language](https://img.shields.io/github/languages/top/Zest-studi-o/P02-The-Gamer-Quiz)
+
 ## CONTENTS
 
 * [AUTOMATED TESTING](#AUTOMATED-TESTING)
@@ -67,25 +74,25 @@ No errors were found when passing through the official
 
 - - -
 
-### JavaScript Validator (to complete again and add screenshots)
+### JavaScript Validator 
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-#### Script - Passed.
+#### Script.js - Passed.
 No errors found.
 ![script.js](docs/testing/jshint/jshint-script.png)
 
-#### Game - Passed.
+#### Game.js - Passed.
 No errors found. 
 ![game.js](docs/testing/jshint/jshint-game.png) 
 
-#### High scores - Passed. 
+#### High-scores.js - Passed. 
 No errors found. 
 ![high-scores.js](docs/testing/jshint/jshint-high-scores.png)
 
-#### End - Passed. 
+#### End.js - Passed. 
 No errors found. 
-A warning about an undefined variable and an unused variable however, those are being defined and used.
+A warning about an undefined variable and an unused variable.
 ![end.js](docs/testing/jshint/jshint-end.png)
 
 
@@ -196,6 +203,11 @@ Each device tested the site using the following browsers:
 | --- | --- | --- | --- | --- |
 | Results list | The list shows the top 5 highest scores | Play any game, reach the end of the page, save scores more than 5 times | The top 5 scores are shown | Pass |
 | Go home | The go home button directs the user to the home page | Click on the go home button | The home page loads | Pass |
+
+`404 page`
+| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Error page | The page shows when there is an issue fetching data from the API | Break the game | The 404 page shows | Pass |
 ---
 
 ## BUG TRACKER
