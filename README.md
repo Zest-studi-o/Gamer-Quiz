@@ -274,8 +274,6 @@ HTML, CSS and JS were used to create this website.
 
 [Amiresponsive](https://ui.dev/amiresponsive) - To generate a mockup in different screen sizes.
 
-[Techsini](https://techsini.com/multi-mockup/) - To generate individual mockups.
-
 [Emoji cursor app](https://www.emojicursor.app/) - I used this app to add the video game controller cursor.
 
 [Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - To format the API’s Json response.
