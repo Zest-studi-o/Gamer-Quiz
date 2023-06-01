@@ -587,6 +587,10 @@ input::placeholder {
     padding-top: 50%;
   }
 
+  .intro-text>p {
+    padding: 0.7em 0em 1em;
+    line-height: 120%;
+  }
 }
 
 /* Small screens */
@@ -602,6 +606,20 @@ input::placeholder {
   .intro-text>h2 {
     font-size: clamp(1rem, 0.1765rem + 3.7647vw, 3rem);
   }
+
+  #modal-content {
+    padding: 0.1em;
+    width: 90%;
+  }
+
+  .btn {
+    padding: 0.8rem;
+  }
+
+  #close-modal {
+    margin-top: 1rem;
+  }
+
 }
 
 @media screen and (max-width: 300px) {
@@ -634,8 +652,5 @@ input::placeholder {
     padding: 0.5rem;
   }
 
-  .intro-text>p {
-    padding: 0.3em 0em 0.8em;
-    line-height: 160%;
-  }
+
 }
