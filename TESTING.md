@@ -92,7 +92,6 @@ No errors found.
 
 #### End.js - Passed. 
 No errors found. 
-A warning about an undefined variable and an unused variable.
 ![end.js](docs/testing/jshint/jshint-end.png)
 
 

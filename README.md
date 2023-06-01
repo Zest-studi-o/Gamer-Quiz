@@ -61,14 +61,14 @@ Project goals:
 - To encourage people to take the gamer quiz.
 - To let users select different levels of difficulty.
 - To provide users with feedback so that they know what they have got wrong and learn the correct answer.
-- To allow the users to save their scores and appear on the leader-board to make it more competitive and appealing to play.
+- To allow the users to save their scores and appear on the leader board to make it more competitive and appealing to play.
 
 ### User Stories
 
 #### First-Time Visitor Goals
 
 - As a first-time visitor, I want to take part in a gaming quiz so that I can test my knowledge about video games.
-- As a first-time visitor, I want to play the quiz in different devices so that I can use all my devices at my convenience.
+- As a first-time visitor, I want to play the quiz on different devices so that I can use all my devices at my convenience.
 - As a first-time visitor, I want to navigate easily the site so that I can understand quickly the game mechanics.
 
 #### Returning Visitor Goals
@@ -77,7 +77,7 @@ Project goals:
 
 #### Frequent Visitor Goals
 - As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as possible to improve. 
-- As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank in the leader boards.
+- As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank on the leader boards.
 
 ---
 
@@ -90,7 +90,7 @@ The site colour palette is based on a technological theme so it could be associa
 
 ### Typography
 For the logo I have used a vector illustration that I customised and exported as png with transparent background.
-I picked a display font for the headings that is related to the quiz theme which is video games named Press Start 2P and then for body copy a readable sans serif, optimal for web design such as montserrat.
+I picked a display font for the headings that are related to the quiz theme which is a video game named Press Start 2P and then for the body copy a readable sans serif, optimal for web design such as Montserrat.
 The fonts were taken from Google Fonts:
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat)
@@ -153,14 +153,14 @@ This website has a home page, a game select page, 3 game pages (easy, medium, di
  ![Fav icon](docs/features/feature-fav-icon.png)
 
   * This will allow the user to clearly identify the site when having open multiple tabs.
-  *  Each page has a unique tittle that indicates this to the user for easier navigation.
+  *  Each page has a unique title that indicates this to the user for easier navigation.
 ---
 
 **Custom cursor**
 
 ![Custom cursor](docs/features/feature-cursor-icon.gif)
 
-  *  A custom cursor video game themed when hovering clickable items in the website.
+  *  A custom cursor video game themed when hovering clickable items on the website.
 ---
 
 **Home page:**
@@ -175,7 +175,7 @@ This website has a home page, a game select page, 3 game pages (easy, medium, di
 
 ![How to play](docs/features/feature-how-to-play.png)
 
-  *  From the home page a modal will open if the user clicks on how to play.   
+  *  From the home page, a modal will open if the user clicks on how to play.   
   *  This page gives instructions on how to take the quiz.
 ---
 
@@ -183,7 +183,7 @@ This website has a home page, a game select page, 3 game pages (easy, medium, di
 
 ![Game select](docs/features/feature-game-select.png)
 
-  * If the user clicks on play, this page will open
+  * If the user clicks on the play button, this page will open
   * The user can select the level of difficulty for the quiz (easy, medium or hard).
 ---
 
@@ -214,7 +214,7 @@ This website has a home page, a game select page, 3 game pages (easy, medium, di
 
 ![404](docs/features/feature-404.png)
 
-  * This is a 404 error page that shows in case of an error fetching data from the api.
+  * This is a 404 error page that shows in case of an error fetching data from the API.
 
 ---
 
@@ -225,7 +225,8 @@ In the future, I would like to:
 - Add a multiplayer version to the game.
 - Store data in back-end.
 - Add music to the quiz.
-- Add a feature in which the player can select the amount of questions.
+- Give a summary of the questions and the correct answers.
+- Add a feature in which the player can select the number of questions.
 
 ### Accessibility
 
@@ -277,7 +278,7 @@ HTML, CSS and JS were used to create this website.
 
 [Emoji cursor app](https://www.emojicursor.app/) - I used this app to add the video game controller cursor.
 
-[Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - To format the the api’s json response
+[Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - To format the API’s Json response.
 
 [Bandicam](https://www.bandicam.com/es/) - To screen record bugs.
 
@@ -334,9 +335,9 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 - [Modals](https://www.youtube.com/watch?v=XH5OW46yO8I) - I used this video tutorial to help me with the modal windows.
 
 - [Build a Quiz App - James Q Quick](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=1) I used this series of videos to teach me how to make a quiz app using html, css and js.
-This tutorial builds up on the Code Institute content, teaching how to develop and add features to a QUIZ app, such as a highscores page or save user data to local storage, the tutorial goes further and also explain how to fetch data from an API to display the questions.
+This tutorial builds upon the Code Institute content, teaching how to develop and add features to a QUIZ app, such as a high scores page or save user data to local storage, the tutorial goes further and also explains how to fetch data from an API to display the questions.
 
-- I also used [stack overflow](https://stackoverflow.com/) to troubleshot errors, [w3schools](https://www.w3schools.com/) and [mdn developer](https://developer.mozilla.org/es/) to read documentation and learn about specific things such as how to fetch.
+- I also used [stack overflow](https://stackoverflow.com/) to troubleshoot errors, [w3schools](https://www.w3schools.com/) and [mdn developer](https://developer.mozilla.org/es/) to read documentation and learn about specific things such as how to fetch.
 
 ### Content
 
