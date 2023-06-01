@@ -27,9 +27,9 @@
 
   //CONSTANTS
   //How much its worth when getting an answer correct
-  const CORRECT_BONUS = 10;
+  const CorrectBonus = 10;
   //How many questions a user gets before they finish
-  const MAX_QUESTIONS = 10;
+  const MaxQuestions = 10;
 
   function setGameLevel() {
     //Fetch easy questions from API
@@ -106,12 +106,13 @@
    */
   function getNewQuestion() {
 
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) { //if there are no questions left in the array or question counter gets to max
+    //if there are no questions left in the array or question counter gets to max
+    if (availableQuesions.length === 0 || questionCounter >= MaxQuestions) {
       //go to the end html page
       return window.location.assign("./end.html");
     }
     questionCounter++;
-    questionCounterText.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`; //Scoreboard - question counter
+    questionCounterText.innerHTML = `${questionCounter}/${MaxQuestions}`; //Scoreboard - question counter
     localStorage.setItem("mostRecentScore", score); //Stores scores
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -135,19 +136,20 @@
     choice.addEventListener("click", e => {
       const selectedChoice = e.target;
       const selectedAnswer = selectedChoice.dataset.number;
-
-      const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; //detect correct and incorrect answers
+      //detects correct and incorrect answers
+      const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
       //Adds correct answer bonus
       if (classToApply === "correct") {
-        incrementScore(CORRECT_BONUS);
+        incrementScore(CorrectBonus);
       }
 
       if (!acceptingAnswers) return;
 
       acceptingAnswers = false;
 
-      selectedChoice.parentElement.classList.add(classToApply); //the selected choice grabs the parent element and get the class to apply
+      //the selected choice grabs the parent element and get the class to apply
+      selectedChoice.parentElement.classList.add(classToApply);
 
       //Delays the question to control the time in showing the feedback colour
       setTimeout(() => {
