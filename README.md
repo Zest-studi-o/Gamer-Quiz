@@ -2,7 +2,7 @@
 
 ![The Gamer Quiz](docs/project.png)
 
-The Gamer Quiz is an interactive front-end web application in quiz format, based on video games.
+The Gamer Quiz is a fun interactive front-end web application presented in a quiz format. The quiz format is randomly selected questions based on video games. End Users can test their Gaming knowledge in three different difficulty levels and compete for the top spot on the High Score Leaderboard.
 
 Visit the live site: [The Gamer Quiz](https://zest-studi-o.github.io/P02-The-Gamer-Quiz/)
 
@@ -60,8 +60,8 @@ how the website can help users meet their needs.
 Project goals:
 - To encourage people to take the gamer quiz.
 - To let users select different levels of difficulty.
-- To provide users with feedback so that they know what they have got wrong and learn the correct answer.
-- To allow the users to save their scores and appear on the leader board to make it more competitive and appealing to play.
+- To provide users with feedback so that they know what they have gotten wrong and to learn the correct answer.
+- To allow the users to save their scores and appear on the leaderboard to make it more competitive and appealing to play.
 
 ### User Stories
 
@@ -77,7 +77,7 @@ Project goals:
 
 #### Frequent Visitor Goals
 - As a frequent visitor, I want to select the level of difficulty so that I can unlock as many questions as possible to improve. 
-- As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank on the leader boards.
+- As a frequent visitor, I want to be able to log my scores so I can track my progress and get a high rank on the leaderboards.
 
 ---
 
@@ -89,7 +89,7 @@ The site colour palette is based on a technological theme so it could be associa
 ![Content](docs/colour-palette.png)
 
 ### Typography
-For the logo I have used a vector illustration that I customised and exported as png with transparent background.
+For the logo I have used a vector illustration that I customised and exported as a png with transparent background.
 I picked a display font for the headings that are related to the quiz theme which is a video game named Press Start 2P and then for the body copy a readable sans serif, optimal for web design such as Montserrat.
 The fonts were taken from Google Fonts:
 
@@ -278,7 +278,7 @@ HTML, CSS and JS were used to create this website.
 
 [Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa) - To format the API’s Json response.
 
-[Bandicam](https://www.bandicam.com/es/) - To screen record bugs.
+[Bandicam](https://www.bandicam.com/es/) - To screen record bugs and features.
 
 [Windows photo feature](https://www.microsoft.com/en-us/windows/photo-movie-editor) - To trim screen recording.
 

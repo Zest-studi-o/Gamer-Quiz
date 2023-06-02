@@ -46,7 +46,7 @@
 
   /**
    * Loads the questions
-   * Get questions from opendb
+   * Get questions from opentdb
    */
   function fetchQuestionsFromAPI() {
     fetch(url)
@@ -128,6 +128,9 @@
     acceptingAnswers = true; //allow user to answer
   }
 
+
+
+
   /**
    * Fetch the choices as the user clicks
    * allows to select and answer
@@ -137,23 +140,21 @@
       const selectedChoice = e.target;
       const selectedAnswer = selectedChoice.dataset.number;
       //detects correct and incorrect answers
+      // set class to apply according answer correct or not
       const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
       //Adds correct answer bonus
       if (classToApply === "correct") {
         incrementScore(CorrectBonus);
+        // } else {
+
       }
 
       if (!acceptingAnswers) return;
 
       acceptingAnswers = false;
 
-      /**
-       * The question the user selects grabs the parent element
-       * which is the whole container and gets the class to apply
-       * that is red for wrong and green for right answers
-       */
-
+      //The selected choice grabs the parent element and get the class to apply
       selectedChoice.parentElement.classList.add(classToApply);
 
       //Delays the question to control the time in showing the feedback colour

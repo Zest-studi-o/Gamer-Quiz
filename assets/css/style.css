@@ -169,6 +169,10 @@ Flex container*/
   transform: none;
 }
 
+.btn-width {
+  width: 80%;
+}
+
 /* for buttons A, B, C, D*/
 .choice-container {
   display: flex;
@@ -560,7 +564,7 @@ input::placeholder {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .outer-container {
@@ -613,7 +617,7 @@ input::placeholder {
   }
 
   .btn {
-    padding: 0.8rem;
+    padding: 0.7rem;
   }
 
   #close-modal {
@@ -645,7 +649,7 @@ input::placeholder {
   }
 
   p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .btn {
