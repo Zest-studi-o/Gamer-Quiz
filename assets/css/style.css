@@ -533,7 +533,6 @@ input::placeholder {
   }
 }
 
-
 /* Medium-small screens */
 @media screen and (max-width: 550px) {
   .main-background {
@@ -593,7 +592,7 @@ input::placeholder {
 
   .intro-text>p {
     padding: 0.7em 0em 1em;
-    line-height: 120%;
+    line-height: 150%;
   }
 }
 
@@ -624,9 +623,14 @@ input::placeholder {
     margin-top: 1rem;
   }
 
+  #high-scores {
+    padding-top: 3em;
+  }
+
+
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .logo {
     height: 1.3em
   }
@@ -654,5 +658,13 @@ input::placeholder {
 
   .btn {
     padding: 0.5rem;
+  }
+
+  #high-scores {
+    padding-top: 2em;
+  }
+
+  .intro-text>p {
+    line-height: 160%;
   }
 }
