@@ -112,7 +112,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 ![How to play wireframe](docs/wf-how-to-play.png)
 
-- Select difficulty level page
+- Select the difficulty level page
 
 ![Select difficulty level](docs/wf-select-difficulty-level.png)
 
@@ -225,7 +225,8 @@ In the future, I would like to:
 - Add a multiplayer version to the game.
 - Store data in back-end.
 - Add music to the quiz.
-- Give a summary of the questions and the correct answers.
+- Give the user feedback on which is the correct answer when getting a question wrong.
+- Give a summary of the questions and answers done at the end.
 - Add a feature in which the player can select the number of questions.
 
 ### Accessibility
@@ -234,7 +235,7 @@ It is important to have a website that is accessibility friendly, this objective
 
 - Ensuring that images have an alt attribute.
 - Using aria labels.
-- Using semantic html.
+- Using semantic HTML.
 - Making sure that background and foreground colours have high contrast, after an error returned in the nav bar by the lighthouse validator the background colour darkness was increased to contrast higher with the white color applied to the font, the logo also has a drop shadow to enhance visibility and the clickable menu for mobile screens uses a visible font size.
 - Using a sans serif font is recommended for web design which is easy to read.
 

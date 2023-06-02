@@ -9,13 +9,12 @@
   const loader = document.getElementById('loader');
   const play = document.getElementById('play');
 
-
   // Default Variables
   let currentQuestion = {};
   let acceptingAnswers = false; //the user can not answer before it is ready
   let score = 0;
   let questionCounter = 0;
-  let availableQuesions = [];
+  let availableQuestions = [];
   let url = 'https://opentdb.com';
 
   //Fetch questions from API
@@ -79,7 +78,7 @@
       })
       .catch((err) => {
         console.log(err);
-        //redirecting to 404 page if api request fails
+        //redirecting to 404 page if API request fails
         window.location.replace("./404.html");
       });
   }
@@ -91,7 +90,7 @@
   function startGame() {
     questionCounter = 0;
     score = 0;
-    availableQuesions = [...questions];
+    availableQuestions = [...questions];
     getNewQuestion();
 
     //To show and hide the loader or the game
@@ -107,7 +106,7 @@
   function getNewQuestion() {
 
     //if there are no questions left in the array or question counter gets to max
-    if (availableQuesions.length === 0 || questionCounter >= MaxQuestions) {
+    if (availableQuestions.length === 0 || questionCounter >= MaxQuestions) {
       //go to the end html page
       return window.location.assign("./end.html");
     }
@@ -115,8 +114,8 @@
     questionCounterText.innerHTML = `${questionCounter}/${MaxQuestions}`; //Scoreboard - question counter
     localStorage.setItem("mostRecentScore", score); //Stores scores
 
-    const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-    currentQuestion = availableQuesions[questionIndex];
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
 
     choices.forEach(choice => {
@@ -124,30 +123,26 @@
       choice.innerHTML = currentQuestion["choice" + number];
     });
 
-    availableQuesions.splice(questionIndex, 1); //the questions are not repeated
+    availableQuestions.splice(questionIndex, 1); //the questions are not repeated
     acceptingAnswers = true; //allow user to answer
   }
-
-
-
 
   /**
    * Fetch the choices as the user clicks
    * allows to select and answer
    */
   choices.forEach(choice => {
+    // e is the event (an answer button being clicked)
     choice.addEventListener("click", e => {
       const selectedChoice = e.target;
       const selectedAnswer = selectedChoice.dataset.number;
-      //detects correct and incorrect answers
-      // set class to apply according answer correct or not
+      //Detects correct and incorrect answers
+      //Set class to apply according answer correct or not
       const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
       //Adds correct answer bonus
       if (classToApply === "correct") {
         incrementScore(CorrectBonus);
-        // } else {
-
       }
 
       if (!acceptingAnswers) return;
