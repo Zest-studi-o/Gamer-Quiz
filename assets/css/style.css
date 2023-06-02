@@ -453,6 +453,10 @@ input::placeholder {
   .end-btns {
     width: 50%;
   }
+
+  #high-scores {
+    padding-top: 1em;
+  }
 }
 
 @media screen and (max-width: 900px) {
