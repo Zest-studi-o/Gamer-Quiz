@@ -47,6 +47,7 @@
    * Loads the questions
    * Get questions from opentdb
    */
+  /**
   function fetchQuestionsFromAPI() {
     fetch(url)
       .then((res) => {
@@ -81,7 +82,42 @@
         //redirecting to 404 page if API request fails
         window.location.replace("./404.html");
       });
-  }
+  }*/
+
+  //CALL API FUNCTION
+  function fetchQuestionsFromAPI() {
+    fetch(url)
+      .then((res) => {
+        return res.json(); //Return promise
+      })
+      .then((loadedQuestions) => {
+        questions = loadedQuestions.results.map((loadedQuestion) => {
+          const formattedQuestion = {
+            question: loadedQuestion.question,
+          };
+
+          const answerChoices = [...loadedQuestion.incorrect_answers];
+          formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+          answerChoices.splice(
+            formattedQuestion.answer - 1,
+            0,
+            loadedQuestion.correct_answer
+          );
+
+          answerChoices.forEach((choice, index) => {
+            formattedQuestion['choice' + (index + 1)] = choice;
+          });
+
+          return formattedQuestion;
+        });
+        if (questionCounterText) {
+          startGame();
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }
 
   /**
    * Start the game at 0, copy the questions from questions array
