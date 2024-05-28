@@ -84,6 +84,8 @@
       });
   }*/
 
+  //test
+
   //CALL API FUNCTION
   function fetchQuestionsFromAPI() {
     fetch(url)
