@@ -419,6 +419,8 @@ input::placeholder {
   .main-background {
     background: url("../images/bg-365x747px.png") no-repeat center center;
     background-size: cover;
+    width: 100%;
+    height: auto;
   }
 
   .btn-container {
