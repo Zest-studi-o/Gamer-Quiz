@@ -20,18 +20,13 @@
   //Fetch questions from API
   let questions = [];
 
-  setGameLevel();
-
-  fetchQuestionsFromAPI();
-
   //CONSTANTS
   //How much its worth when getting an answer correct
   const CorrectBonus = 10;
   //How many questions a user gets before they finish
   const MaxQuestions = 10;
 
-  function setGameLevel() {
-    //Fetch easy questions from API
+  document.addEventListener("DOMContentLoaded", function () {
     if (window.location.href.includes('easy')) {
       url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple';
     } else if (window.location.href.includes('medium')) {
@@ -41,13 +36,13 @@
       //Fetch hard questions from API
       url = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=hard&type=multiple';
     }
-  }
+    fetchQuestionsFromAPI()
+  })
 
   /**
    * Loads the questions
    * Get questions from opentdb
    */
-  /**
   function fetchQuestionsFromAPI() {
     fetch(url)
       .then((res) => {
@@ -79,48 +74,15 @@
       })
       .catch((err) => {
         console.log(err);
+        if (err) {
+          setTimeout(() => {
+            fetchQuestionsFromAPI()
+          }, 6000)
+        }
         //redirecting to 404 page if API request fails
-        window.location.replace("./404.html");
-      });
-  }*/
-
-  //test
-
-  //CALL API FUNCTION
-  function fetchQuestionsFromAPI() {
-    fetch(url)
-      .then((res) => {
-        return res.json(); //Return promise
-      })
-      .then((loadedQuestions) => {
-        questions = loadedQuestions.results.map((loadedQuestion) => {
-          const formattedQuestion = {
-            question: loadedQuestion.question,
-          };
-
-          const answerChoices = [...loadedQuestion.incorrect_answers];
-          formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-          answerChoices.splice(
-            formattedQuestion.answer - 1,
-            0,
-            loadedQuestion.correct_answer
-          );
-
-          answerChoices.forEach((choice, index) => {
-            formattedQuestion['choice' + (index + 1)] = choice;
-          });
-
-          return formattedQuestion;
-        });
-        if (questionCounterText) {
-          startGame();
-        }
-      })
-      .catch((err) => {
-        console.log(err);
+        //window.location.replace("./404.html");
       });
     }
-
   /**
    * Start the game at 0, copy the questions from questions array
    * and they are put into a new array
